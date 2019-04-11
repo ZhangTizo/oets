@@ -19,10 +19,7 @@ public class ManagerLoginServlet extends HttpServlet {
         response.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
         HttpSession session = request.getSession();
-
-        String user = "";
-        session.setAttribute("manager",user);
-
+        session.setAttribute("user","manager");
         ManagerDaoImpl mdi = new ManagerDaoImpl();
         if(session.getAttribute("name")==null) {
             PrintWriter out = response.getWriter();

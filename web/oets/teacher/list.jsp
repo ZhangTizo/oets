@@ -44,7 +44,7 @@
 <body>
 <form action="SearchTeacherServlet" method="post">
     <br>
-    <input type="button" onclick="location.href='../admin/manage.jsp'" value="返回上一页">
+    <input type="button" onclick="location.href='../manager/manage.jsp'" value="返回上一页">
     <input type="button" onclick="location.href='TeacherListServlet?method=insert'" value="插入教师信息">
     <div align="center">
         <h1>教师管理</h1>

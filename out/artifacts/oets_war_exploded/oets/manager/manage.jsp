@@ -108,7 +108,7 @@
 </div>
 <br><br>
 <div align="center">
-    <input type="button" onclick="location.href='../student/StudentListServlet?user=manager'" value="学生管理" class="but">&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="location.href='../student/StudentListServlet'" value="学生管理" class="but">&nbsp;&nbsp;&nbsp;&nbsp;
     <input type="button" onclick="location.href='../teacher/TeacherListServlet'" value="教师管理" class="but">&nbsp;&nbsp;&nbsp;&nbsp;
     <input type="button" onclick="location.href='../test/question/QuestionListServlet'" value="题库管理" class="but">&nbsp;&nbsp;&nbsp;&nbsp;
 </div>

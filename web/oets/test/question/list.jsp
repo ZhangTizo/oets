@@ -44,7 +44,7 @@
 <body>
 <form action="SearchQuestionServlet" method="post">
     <br>
-    <input type="button" onclick="location.href='../../manager/manage.jsp'" value="返回上一页">
+    <input type="button" onclick="location.href='ReturnQuestionServlet'" value="返回上一页">
     <input type="button" onclick="location.href='QuestionListServlet?method=insert'" value="新增题目">
     <div align="center">
         <h1>题库管理</h1>

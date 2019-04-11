@@ -20,6 +20,7 @@ public class TeacherLoginServlet extends HttpServlet {
         response.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
         HttpSession session = request.getSession();
+        session.setAttribute("user","teacher");
         TeacherDaoImpl tdi = new TeacherDaoImpl();
         if (session.getAttribute("teano") == null) {
             PrintWriter out = response.getWriter();

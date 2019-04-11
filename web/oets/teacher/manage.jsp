@@ -85,7 +85,7 @@
 
         .Box {
             border: 1px solid black;
-            font: 14px;
+            font-size: 14px;
             width: 80px;
         }
     </style>
@@ -108,7 +108,7 @@
 <br><br>
 <h1>教师管理系统</h1>
 <div align="center">
-    <input type="button" onclick="location.href='../student/StudentListServlet?user=teacher'" value="学生管理" class="but">&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="location.href='../student/StudentListServlet'" value="学生管理" class="but">&nbsp;&nbsp;&nbsp;&nbsp;
     <input type="button" onclick="location.href='../test/question/QuestionListServlet'" value="题库管理" class="but">&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 </body>
