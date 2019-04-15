@@ -9,24 +9,11 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/ahstu/oets/entity/Question.java" line="13" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ab2a56-7266-4131-bda6-61c3f235a272" name="Default" comment="Correct BUGs">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="10ab2a56-7266-4131-bda6-61c3f235a272" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/testpaper/insert.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/testpaper/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/testpaper/update.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/manager/manage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/manager/manage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/manage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/manage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/paper/insert.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/paper/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/paper/update.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/question/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/question/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/ManagerLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/ManagerLoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/ReturnQuestionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/ReturnQuestionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/ReturnStudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/ReturnStudentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/TeacherLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/TeacherLoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/oets/manager/manage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/manager/manage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/oets/teacher/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/teacher/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/oets/teacher/manage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/teacher/manage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/oets/test/question/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/test/question/list.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,35 +38,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/oets/teacher/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-530">
-              <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/oets/manager/manage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="93" column="7" lean-forward="true" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/oets/teacher/manage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -459,12 +418,35 @@
       <workItem from="1554337177787" duration="593000" />
       <workItem from="1554339309721" duration="6956000" />
       <workItem from="1554960088904" duration="49000" />
-      <workItem from="1554965141194" duration="2477000" />
+      <workItem from="1554965141194" duration="2836000" />
+      <workItem from="1555309797126" duration="281000" />
     </task>
+    <task id="LOCAL-00001" summary="Correct BUGs">
+      <created>1554967638419</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554967638419</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update sql file.">
+      <created>1555309993253</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555309993253</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Create new jsp TODO.">
+      <created>1555310074216</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555310074216</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132008000" />
+    <option name="totallyTimeSpent" value="132648000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -479,30 +461,30 @@
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5005208" side_tool="true" weight="0.2513144" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32814527" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297414" />
-      <window_info active="true" anchor="bottom" id="Messages" order="9" visible="true" weight="0.31558442" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3297414" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5005208" side_tool="true" weight="0.2513144" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32814527" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32931727" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" weight="0.312987" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3297414" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18625" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18625" />
       <window_info id="Web" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.31558442" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -519,7 +501,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Correct BUGs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct BUGs" />
+    <MESSAGE value="Update sql file." />
+    <MESSAGE value="Create new jsp TODO." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new jsp TODO." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -816,9 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,9 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="19" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -857,9 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -867,9 +842,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -891,22 +863,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/oets/teacher/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-530">
+        <state relative-caret-position="836">
           <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/oets/teacher/manage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
+        <state relative-caret-position="1653">
           <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
         </state>
       </provider>
@@ -914,7 +883,7 @@
     <entry file="file://$PROJECT_DIR$/web/oets/manager/manage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
-          <caret line="93" column="7" lean-forward="true" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
+          <caret line="93" column="7" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
         </state>
       </provider>
     </entry>
