@@ -10,16 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10ab2a56-7266-4131-bda6-61c3f235a272" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/StudentPasswordServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/AlterStudentServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/AlterTeacherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/TeacherUpdateServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/StudentListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/StudentListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/StudentServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/TeacherListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/TeacherListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/UpdateStudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/UpdateStudentServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/UpdateTeacherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ahstu/oets/servlet/TeacherPasswordServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/oets/student/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/student/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/oets/teacher/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/teacher/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/oets/test/testpaper/edit.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,33 +35,14 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/oets/teacher/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/oets/student/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -80,7 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ak/exam/servlet/SearchTeacherServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ak/exam/servlet/StudentListServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ak/exam/servlet/StudentServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ak/exam/servlet/TeacherListServlet.java" />
@@ -131,6 +102,7 @@
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/TeacherListServlet.java" />
         <option value="$PROJECT_DIR$/web/oets/student/list.jsp" />
         <option value="$PROJECT_DIR$/web/oets/teacher/list.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/test/testpaper/edit.jsp" />
       </list>
     </option>
   </component>
@@ -151,6 +123,9 @@
     <option name="x" value="815" />
     <option name="width" value="1104" />
     <option name="height" value="920" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -190,6 +165,24 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="ahstu" type="462c0819:PsiDirectoryNode" />
               <item name="oets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ahstu" type="462c0819:PsiDirectoryNode" />
+              <item name="oets" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ahstu" type="462c0819:PsiDirectoryNode" />
+              <item name="oets" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oets" type="b2602c69:ProjectViewProjectNode" />
@@ -427,7 +420,7 @@
       <workItem from="1554960088904" duration="49000" />
       <workItem from="1554965141194" duration="2836000" />
       <workItem from="1555309797126" duration="281000" />
-      <workItem from="1555319839802" duration="354000" />
+      <workItem from="1555319839802" duration="571000" />
     </task>
     <task id="LOCAL-00001" summary="Correct BUGs">
       <created>1554967638419</created>
@@ -450,11 +443,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555310074216</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial commit">
+      <created>1555320321493</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555320321493</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133002000" />
+    <option name="totallyTimeSpent" value="133219000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -467,7 +467,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5005208" side_tool="true" weight="0.2513144" />
@@ -482,19 +481,19 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297414" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.31558442" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3297414" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32857144" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" weight="0.312987" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" weight="0.32987013" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3297414" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18625" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32597402" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.31558442" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -512,7 +511,8 @@
     <MESSAGE value="Correct BUGs" />
     <MESSAGE value="Update sql file." />
     <MESSAGE value="Create new jsp TODO." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create new jsp TODO." />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -520,7 +520,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/StudentServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/StudentLoginServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/entity/Option.java" />
     <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/dao/impl/ManagerDaoImpl.java">
@@ -596,42 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/entity/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
-          <folding>
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1134#1135#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1214#1215#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/dao/impl/StudentDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1463">
@@ -639,7 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/entity/TestPaper.java" />
     <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/dao/QuestionDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -663,7 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/dao/TestPaperDao.java" />
     <entry file="file://$PROJECT_DIR$/web/oets/manager/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -770,6 +731,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/teacher/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/oets/student/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -777,10 +745,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/teacher/list.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/dao/TestPaperDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
+        <state relative-caret-position="76">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/entity/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+          <folding>
+            <element signature="e#264#265#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/entity/TestPaper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
