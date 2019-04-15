@@ -13,8 +13,8 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "UpdateTeacherServlet", value = "/oets/teacher/UpdateTeacherServlet")
-public class UpdateTeacherServlet extends HttpServlet {
+@WebServlet(name = "TeacherPasswordServlet", value = "/oets/teacher/TeacherPasswordServlet")
+public class TeacherPasswordServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("utf-8");

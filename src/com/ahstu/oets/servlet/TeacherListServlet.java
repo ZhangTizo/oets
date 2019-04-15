@@ -39,7 +39,7 @@ public class TeacherListServlet extends HttpServlet {
             request.setAttribute("teacherList", list);
             request.getRequestDispatcher("list.jsp").forward(request, response);
         } else {
-            if (method.equals("alter")) {
+            if (method.equals("update")) {
                 try {
                     request.setAttribute("teacher",tdi.getOne(Integer.valueOf(request.getParameter("post"))));
                 } catch (Exception e) {

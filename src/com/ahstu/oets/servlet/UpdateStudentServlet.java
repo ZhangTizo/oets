@@ -9,75 +9,71 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "UpdateStudentServlet",value = "/oets/student/UpdateStudentServlet")
+@WebServlet(name = "UpdateStudentServlet", value = "/oets/student/UpdateStudentServlet")
 public class UpdateStudentServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
-        PrintWriter out = response.getWriter();
-        HttpSession session = request.getSession();
         StudentDaoImpl sdi = new StudentDaoImpl();
-        String stuno = (String)session.getAttribute("stuno");
-        try {
-            Student student = sdi.getOne(stuno);
-            String password = request.getParameter("password");
-            String password1 = request.getParameter("password1");
-            String password2 = request.getParameter("password2");
-            if(!sdi.getOne(stuno).getPassword().equals(DbUtil.md5(password))){  //原密码输入错误，则无法修改当前密码
+        PrintWriter out = response.getWriter();
+        int id = Integer.valueOf(request.getParameter("id"));
+        String stuno = request.getParameter("stuno");
+        String name = request.getParameter("name");
+        String memo = request.getParameter("memo");
+        String password = request.getParameter("password");
+        int sex = Integer.valueOf(request.getParameter("sex"));
+        int age = Integer.valueOf(request.getParameter("age"));
+        if (password.equals("")) {  //如果密码栏没有输入，则不修改密码，取数据库中密码提交
+            Student student = new Student();
+            student.setId(id);
+            student.setName(name);
+            student.setStuno(stuno);
+            student.setSex(sex);
+            student.setAge(age);
+            student.setMemo(memo);
+            try {
+                String password1 = sdi.getOne(id).getPassword();
+                student.setPassword(password1);
+                System.out.println(sdi.alter(student));
                 out.print("<html>" +
                         "<body>" +
                         "<script type=\'text/javascript\' language=\'javascript\'>\n" +
-                        "           alert(\'原密码错误！！！\');\n" +
-                        "           window.document.location.href=\'update.jsp\';\n" +
+                        "           alert(\'成功修改学生信息！！！\');\n" +
+                        "           window.document.location.href=\'StudentListServlet\';\n" +
                         "</script>" +
                         "</body>");
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-            else {
-                if(!password1.equals(password2)){   //修改新密码时，新密码与确认密码不一致，则修改失败
-                    out.print("<html>" +
-                            "<body>" +
-                            "<script type=\'text/javascript\' language=\'javascript\'>\n" +
-                            "           alert(\'两次密码不一致！！！\');\n" +
-                            "           window.document.location.href=\'update.jsp\';\n" +
-                            "</script>" +
-                            "</body>");
-                }
-                else {
-                    if (!password.equals(password1)) {
-                        //System.out.println(password+" "+ DbUtil.md5(password1));
-                        student.setPassword(DbUtil.md5(password1));
-                        //System.out.println(sdi.update(student));
-                        sdi.update(student);
-                        out.print("<html>" +
-                                "<body>" +
-                                "<script type=\'text/javascript\' language=\'javascript\'>\n" +
-                                "           alert(\'密码修改成功！！！\');\n" +
-                                "           window.document.location.href=\'logout.jsp\';\n" +
-                                "</script>" +
-                                "</body>");
-                    }
-                    else {  //如果新密码与原密码相同，则修改失败
-                        out.print("<html>" +
-                                "<body>" +
-                                "<script type=\'text/javascript\' language=\'javascript\'>\n" +
-                                "           alert(\'新密码不能与原密码相同！！！\');\n" +
-                                "           window.document.location.href=\'update.jsp\';\n" +
-                                "</script>" +
-                                "</body>");
-                    }
-                }
+        } else {    //密码栏输入密码，将输入密码作为新密码一并提交
+            Student student = new Student();
+            student.setId(id);
+            student.setName(name);
+            student.setStuno(stuno);
+            student.setSex(sex);
+            student.setAge(age);
+            student.setMemo(memo);
+            student.setPassword(DbUtil.md5(password));
+            try {
+                System.out.println(sdi.alter(student));
+                out.print("<html>" +
+                        "<body>" +
+                        "<script type=\'text/javascript\' language=\'javascript\'>\n" +
+                        "           alert(\'成功修改学生信息！！！\');\n" +
+                        "           window.document.location.href=\'StudentListServlet\';\n" +
+                        "</script>" +
+                        "</body>");
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request,response);
+        doPost(request, response);
     }
 }

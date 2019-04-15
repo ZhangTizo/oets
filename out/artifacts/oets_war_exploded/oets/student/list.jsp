@@ -70,7 +70,7 @@
                 <td>${student.age}</td>
                 <td>${student.memo eq "" ? "无" : student.memo}</td>
                 <td>
-                    <a href="StudentListServlet?method=alter&post=${student.id}">修改</a>
+                    <a href="StudentListServlet?method=update&post=${student.id}">修改</a>
                     &nbsp;&nbsp;
                     <a href="javascript:if(confirm('确实要删除吗?'))location='StudentListServlet?method=delete&post=${student.id}'">删除</a>
                 </td>

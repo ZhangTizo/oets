@@ -1,9 +1,8 @@
 package com.ahstu.oets.servlet;
 
-import com.ahstu.oets.dao.impl.StudentDaoImpl;
-import com.ahstu.oets.entity.Student;
+import com.ahstu.oets.dao.impl.TeacherDaoImpl;
+import com.ahstu.oets.entity.Teacher;
 import com.ahstu.oets.util.DbUtil;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,65 +11,66 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "AlterStudentServlet", value = "/oets/student/AlterStudentServlet")
-public class AlterStudentServlet extends HttpServlet {
+@WebServlet(name = "TeacherUpdateServlet", value = "/oets/teacher/TeacherUpdateServlet")
+public class TeacherUpdateServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
-        StudentDaoImpl sdi = new StudentDaoImpl();
+        TeacherDaoImpl tdi = new TeacherDaoImpl();
         PrintWriter out = response.getWriter();
         int id = Integer.valueOf(request.getParameter("id"));
-        String stuno = request.getParameter("stuno");
+        String teano = request.getParameter("teano");
         String name = request.getParameter("name");
-        String memo = request.getParameter("memo");
         String password = request.getParameter("password");
         int sex = Integer.valueOf(request.getParameter("sex"));
         int age = Integer.valueOf(request.getParameter("age"));
-        if (password.equals("")) {  //如果密码栏没有输入，则不修改密码，取数据库中密码提交
-            Student student = new Student();
-            student.setId(id);
-            student.setName(name);
-            student.setStuno(stuno);
-            student.setSex(sex);
-            student.setAge(age);
-            student.setMemo(memo);
+        String memo = request.getParameter("memo");
+        if (password.equals("")) {  //传入密码栏为空，则默认不修改密码
+            Teacher teacher = new Teacher();
+            teacher.setId(id);
+            teacher.setTeano(teano);
+            teacher.setName(name);
+            teacher.setSex(sex);
+            teacher.setAge(age);
+            teacher.setMemo(memo);
             try {
-                String password1 = sdi.getOne(id).getPassword();
-                student.setPassword(password1);
-                System.out.println(sdi.alter(student));
+                String password1 = tdi.getOne(id).getPassword();
+                teacher.setPassword(password1);
+                System.out.println(tdi.alter(teacher));
                 out.print("<html>" +
                         "<body>" +
                         "<script type=\'text/javascript\' language=\'javascript\'>\n" +
-                        "           alert(\'成功修改学生信息！！！\');\n" +
-                        "           window.document.location.href=\'StudentListServlet\';\n" +
+                        "           alert(\'成功修改教师信息！！！\');\n" +
+                        "           window.document.location.href=\'TeacherListServlet\';\n" +
                         "</script>" +
                         "</body>");
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        } else {    //密码栏输入密码，将输入密码作为新密码一并提交
-            Student student = new Student();
-            student.setId(id);
-            student.setName(name);
-            student.setStuno(stuno);
-            student.setSex(sex);
-            student.setAge(age);
-            student.setMemo(memo);
-            student.setPassword(DbUtil.md5(password));
+        } else {    //密码栏不为空，则修改密码
+            Teacher teacher = new Teacher();
+            teacher.setId(id);
+            teacher.setTeano(teano);
+            teacher.setName(name);
+            teacher.setSex(sex);
+            teacher.setAge(age);
+            teacher.setMemo(memo);
+            teacher.setPassword(DbUtil.md5(password));
             try {
-                System.out.println(sdi.alter(student));
+                System.out.println(tdi.alter(teacher));
                 out.print("<html>" +
                         "<body>" +
                         "<script type=\'text/javascript\' language=\'javascript\'>\n" +
-                        "           alert(\'成功修改学生信息！！！\');\n" +
-                        "           window.document.location.href=\'StudentListServlet\';\n" +
+                        "           alert(\'成功修改教师信息！！！\');\n" +
+                        "           window.document.location.href=\'TeacherListServlet\';\n" +
                         "</script>" +
                         "</body>");
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

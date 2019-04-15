@@ -85,7 +85,7 @@
 
         .Box {
             border: 1px solid black;
-            font: 14px;
+            font-size: 14px;
             width: 80px;
         }
     </style>

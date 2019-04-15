@@ -45,7 +45,7 @@ public class StudentListServlet extends HttpServlet {
             request.getRequestDispatcher("list.jsp").forward(request, response);
         }
         else {
-            if(method.equals("alter")){
+            if(method.equals("update")){
                 try {
                     request.setAttribute("student",sdi.getOne(Integer.valueOf(request.getParameter("post"))));
                 } catch (Exception e) {
