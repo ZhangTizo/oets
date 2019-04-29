@@ -33,7 +33,7 @@ public class TeacherPasswordServlet extends HttpServlet {
                         "<body>" +
                         "<script type=\'text/javascript\' language=\'javascript\'>\n" +
                         "           alert(\'原密码错误！！！\');\n" +
-                        "           window.document.location.href=\'update.jsp\';\n" +
+                        "           window.document.location.href=\'password.jsp\';\n" +
                         "</script>" +
                         "</body>");
             } else {
@@ -42,7 +42,7 @@ public class TeacherPasswordServlet extends HttpServlet {
                             "<body>" +
                             "<script type=\'text/javascript\' language=\'javascript\'>\n" +
                             "           alert(\'两次密码不一致！！！\');\n" +
-                            "           window.document.location.href=\'update.jsp\';\n" +
+                            "           window.document.location.href=\'password.jsp\';\n" +
                             "</script>" +
                             "</body>");
                 } else {
@@ -63,7 +63,7 @@ public class TeacherPasswordServlet extends HttpServlet {
                                 "<body>" +
                                 "<script type=\'text/javascript\' language=\'javascript\'>\n" +
                                 "           alert(\'新密码不能与原密码相同！！！\');\n" +
-                                "           window.document.location.href=\'update.jsp\';\n" +
+                                "           window.document.location.href=\'password.jsp\';\n" +
                                 "</script>" +
                                 "</body>");
                     }

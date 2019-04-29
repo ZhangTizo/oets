@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "TeacherUpdateServlet", value = "/oets/teacher/TeacherUpdateServlet")
-public class TeacherUpdateServlet extends HttpServlet {
+@WebServlet(name = "UpdateTeacherServlet", value = "/oets/teacher/UpdateTeacherServlet")
+public class UpdateTeacherServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("utf-8");

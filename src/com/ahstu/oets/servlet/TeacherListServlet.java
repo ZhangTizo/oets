@@ -45,7 +45,7 @@ public class TeacherListServlet extends HttpServlet {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-                request.getRequestDispatcher("alter.jsp").forward(request, response);
+                request.getRequestDispatcher("update.jsp").forward(request, response);
             } else if (method.equals("insert")) {
                 response.sendRedirect("insert.jsp");
             } else if (method.equals("delete")) {

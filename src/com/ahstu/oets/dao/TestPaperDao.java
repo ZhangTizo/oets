@@ -9,5 +9,5 @@ public interface TestPaperDao {
     public int update(TestPaper testPaper) throws Exception;
     public int delete(int id) throws Exception;
     public TestPaper getOne(String name) throws Exception;
-    public ArrayList<TestPaper> getList(String name) throws Exception;
+    public ArrayList<TestPaper> getList() throws Exception;
 }

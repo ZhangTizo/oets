@@ -1,7 +1,7 @@
 package com.ahstu.oets.servlet;
 
-import com.ahstu.oets.dao.impl.QuestionDaoImpl;
-import com.ahstu.oets.entity.Question;
+import com.ahstu.oets.dao.impl.TestPaperDaoImpl;
+import com.ahstu.oets.entity.TestPaper;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,36 +12,36 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-@WebServlet(name = "QuestionListServlet", value = "/oets/test/question/QuestionListServlet")
-public class QuestionListServlet extends HttpServlet {
+@WebServlet(name = "TestPaperListServlet", value = "/oets/test/testpaper/TestPaperListServlet")
+public class TestPaperListServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
         String method = request.getParameter("method");
-        QuestionDaoImpl qdi = new QuestionDaoImpl();
+        TestPaperDaoImpl tpdi = new TestPaperDaoImpl();
         PrintWriter out = response.getWriter();
-        ArrayList<Question> questionList = null;
+        ArrayList<TestPaper> testPaperList = null;
         try {
-            questionList = qdi.getList();
+            testPaperList = tpdi.getList();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        int pages = questionList.size() / 10 + 1;
+        int pages = testPaperList.size() / 10 + 1;
         if (method == null) {
-            ArrayList<Question> list = new ArrayList<>();
-            for (int i = 0; i < 10 && i < questionList.size(); i++) {
-                list.add(questionList.get(i));
+            ArrayList<TestPaper> list = new ArrayList<>();
+            for (int i = 0; i < 10 && i < testPaperList.size(); i++) {
+                list.add(testPaperList.get(i));
             }
             int currentPages = 1;
             request.setAttribute("currentPages", currentPages);
             request.setAttribute("pages", pages);
-            request.setAttribute("questionList", list);
+            request.setAttribute("testPaperList", list);
             request.getRequestDispatcher("list.jsp").forward(request, response);
         } else {
             if (method.equals("update")) {
                 try {
-                    request.setAttribute("question", qdi.getOne(Integer.valueOf(request.getParameter("post"))));
+                    request.setAttribute("testPaper", tpdi.getOne(Integer.valueOf(request.getParameter("post"))));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -51,10 +51,10 @@ public class QuestionListServlet extends HttpServlet {
             } else if (method.equals("delete")) {
                 int id = Integer.valueOf(request.getParameter("post"));
                 try {
-                    System.out.println(qdi.delete(id));
+                    System.out.println(tpdi.delete(id));
                 } catch (Exception e) {
                 }
-                response.sendRedirect("QuestionListServlet");
+                response.sendRedirect("TestPaperListServlet");
             } else if (method.equals("up")) {
                 int currentPages = Integer.parseInt(request.getParameter("post"));
                 if (currentPages <= 1) {
@@ -62,18 +62,18 @@ public class QuestionListServlet extends HttpServlet {
                             "<body>" +
                             "<script type=\'text/javascript\' language=\'javascript\'>\n" +
                             "           alert(\'已经在第一页了！！！\');\n" +
-                            "           window.document.location.href=\'QuestionListServlet\';\n" +
+                            "           window.document.location.href=\'TestPaperListServlet\';\n" +
                             "</script>" +
                             "</body>");
                 } else {
-                    ArrayList<Question> list = new ArrayList<>();
+                    ArrayList<TestPaper> list = new ArrayList<>();
                     currentPages--;
-                    for (int i = currentPages * 10 - 10; i < currentPages * 10 && i < questionList.size(); i++) {
-                        list.add(questionList.get(i));
+                    for (int i = currentPages * 10 - 10; i < currentPages * 10 && i < testPaperList.size(); i++) {
+                        list.add(testPaperList.get(i));
                     }
                     request.setAttribute("currentPages", currentPages);
                     request.setAttribute("pages", pages);
-                    request.setAttribute("questionList", list);
+                    request.setAttribute("testPaperList", list);
                     request.getRequestDispatcher("list.jsp").forward(request, response);
                 }
             } else if (method.equals("down")) {
@@ -83,18 +83,18 @@ public class QuestionListServlet extends HttpServlet {
                             "<body>" +
                             "<script type=\'text/javascript\' language=\'javascript\'>\n" +
                             "           alert(\'已经在第最后一页了！！！\');\n" +
-                            "           window.document.location.href=\'QuestionListServlet\';\n" +
+                            "           window.document.location.href=\'TestPaperListServlet\';\n" +
                             "</script>" +
                             "</body>");
                 } else {
-                    ArrayList<Question> list = new ArrayList<>();
+                    ArrayList<TestPaper> list = new ArrayList<>();
                     currentPages++;
-                    for (int i = currentPages * 10 - 10; i < currentPages * 10 && i < questionList.size(); i++) {
-                        list.add(questionList.get(i));
+                    for (int i = currentPages * 10 - 10; i < currentPages * 10 && i < testPaperList.size(); i++) {
+                        list.add(testPaperList.get(i));
                     }
                     request.setAttribute("currentPages", currentPages);
                     request.setAttribute("pages", pages);
-                    request.setAttribute("questionList", list);
+                    request.setAttribute("testPaperList", list);
                     request.getRequestDispatcher("list.jsp").forward(request, response);
                 }
             }

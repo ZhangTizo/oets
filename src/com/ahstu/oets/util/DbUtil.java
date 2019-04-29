@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class DbUtil {
     private static String drive          = "com.mysql.jdbc.Driver";
-    private static String url            = "jdbc:mysql://localhost:3306/oets?characterEncoding=utf8&autoReconnect=true&useSSL=false";
+    private static String url            = "jdbc:mysql://localhost:3306/oets?characterEncoding=utf8&autoReconnect=true&useSSL=false&serverTimezone=UTC";
     private static String user           = "root";
     private static String password       = "root";
 

@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>修改密码</title>
+    <title>修改教师信息</title>
     <style>
         h1
         {
@@ -14,16 +14,13 @@
         }
 
         .wrapper {
-            margin: 160px 0 140px 762px;
-            width: 884px;
+            margin: 50px 0 140px 760px;
+            width: 1120px;
         }
 
         .loginBox {
-            background-color: #F0F4F6;
-            border: 1px solid #BfD6E1;
-            border-radius: 5px;
             color: #444;
-            font: 14px 'Microsoft YaHei', '微软雅黑';
+            font: 14px;
             margin: 0;
             width: 388px
         }
@@ -39,7 +36,7 @@
         }
 
         .loginBox .loginBoxButtons {
-            border-top: 0 solid #FFF;
+            border-top: 0px solid #FFF;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             line-height: 28px;
@@ -55,7 +52,7 @@
             border: 1px solid #D2D9dC;
             border-radius: 2px;
             color: #444;
-            font: 12px 'Microsoft YaHei', '微软雅黑';
+            font: 12px;
             padding: 8px 14px;
             margin-bottom: 8px;
             width: 340px;
@@ -67,11 +64,11 @@
         }
 
         .loginBox .loginBtn {
-            background-image: -moz-linear-gradient(to bottom, blue, #85CFEE);
+            background: lightskyblue;
             border: 1px solid #98CCE7;
             border-radius: 20px;
             box-shadow: inset rgba(255, 255, 255, 0.6) 0 1px 1px, rgba(0, 0, 0, 0.1) 0 1px 1px;
-            color: #444;
+            color: black;
             cursor: pointer;
             float: right;
             font: bold 13px Arial;
@@ -81,35 +78,51 @@
         .loginBox .loginBtn:HOVER {
             background-image: -moz-linear-gradient(to top, blue, #85CFEE);
         }
-
-        .loginBox input {
-            vertical-align: middle;
+        select{
+            width: 340px;
+            height: 35px;
+            font-size: 15px;
+            color: black;
+            border-radius: 5px;
         }
 
-        .loginBox label[for="remember"] {
-            font: 11px Arial;
+        select:focus{
+            border: 2px #ddd solid;
+            box-shadow: 0 0 15px 1px #DDDDDD;
         }
-
     </style>
 </head>
 <body>
-<div class="wrapper" >
+<br><br>
+<div align="center">
+    <h1>请修改教师信息</h1>
+</div>
+<div class="wrapper">
     <form action="UpdateTeacherServlet" method="post">
         <div class="loginBox">
             <div class="loginBoxCenter">
-                <p style="font-weight: bold">当前教师：<c:out value="${teano}"></c:out></p>
-                <p>原密码:</p>
-                <p><input type="password" name="password" class="loginInput" autofocus="autofocus" required="required" placeholder="请输入原密码"/></p>
-                <p>新密码:</p>
-                <p><input type="password" name="password1" class="loginInput" required="required" placeholder="请输入新密码"/></p>
-                <p>确认密码:</p>
-                <p><input type="password" name="password2" class="loginInput" required="required" placeholder="请再次输入新密码"/></p>
+                <p><input type="text" name="id" class="loginInput"  value="${teacher.id}" hidden="hidden"/></p>
+                <p>教师工号:</p>
+                <p><input type="text" name="teano" class="loginInput" value="${teacher.teano}"/></p>
+                <p>姓名:</p>
+                <p><input type="text" name="name" class="loginInput" value="${teacher.name}"/></p>
+                <p>性别:</p>
+                <p>
+                    <select name="sex">
+                        <option value="1">&nbsp;&nbsp;男</option>
+                        <option value="2" ${teacher.sex eq 2 ? "selected" : ""}>&nbsp;&nbsp;女</option>
+                    </select>
+                </p>
+                <p>年龄:</p>
+                <p><input type="text" name="age" class="loginInput" value="${teacher.age}" required="required"/></p>
+                <p>密码:</p>
+                <p><input type="text" name="password" class="loginInput" autofocus="autofocus"></p>
+                <p>备注:</p>
+                <p><input type="text" name="memo" class="loginInput" value="${teacher.memo}"/></p>
             </div>
             <div class="loginBoxButtons">
-                <button class="loginBtn" type="submit">修&nbsp;&nbsp;改</button>
-                <button class="loginBtn" type="reset">重&nbsp;&nbsp;置</button>
-                <br>
-                <a href="manage.jsp" style="color: blue;font-weight: bold;font-size: 15px;">返&nbsp;&nbsp;回</a>
+                <input type="submit" value="提&nbsp;&nbsp;交" class="loginBtn">
+                <a href="TeacherListServlet" style="color: blue;font-weight: bold;font-size: 15px;">返&nbsp;&nbsp;回</a>
             </div>
         </div>
     </form>
