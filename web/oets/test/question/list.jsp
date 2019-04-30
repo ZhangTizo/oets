@@ -11,7 +11,6 @@
         h1 {
             background-color: deepskyblue;
         }
-
         table.gridtable{
             font-family:verdana,arial,sans-serif;
             font-size:18px;
@@ -38,7 +37,6 @@
             border-color:#666666;
             background-color:#ffffff;
         }
-
     </style>
 </head>
 <body>

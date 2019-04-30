@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt_rt"%>
 <html>
 <head>
     <title>试卷列表</title>
@@ -58,12 +59,14 @@
             <th>试卷名称</th>
             <th>开始时间</th>
             <th>结束时间</th>
+            <th>预览</th>
         </tr>
         <c:forEach var="testPaper" items="${testPaperList}">
             <tr>
                 <td><a href="TestPaperListServlet?method=update&post=${testPaper.id}">${testPaper.name}</a></td>
-                <td>${testPaper.start}</td>
-                <td>${testPaper.end}</td>
+                <td><fmt:formatDate value="${testPaper.start}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
+                <td><fmt:formatDate value="${testPaper.end}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
+                <td><a href="TestPaperPreviewServlet?post=${testPaper.id}" target="_blank">预览</a></td>
             </tr>
         </c:forEach>
     </table>

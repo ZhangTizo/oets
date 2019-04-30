@@ -106,6 +106,9 @@
         </ul>
     </div>
     <br><br>
-   <h1>考试系统</h1>
+<div align="center">
+    <input type="button" onclick="location.href=''" value="准备考试" class="but">
+    <input type="button" onclick="location.href=''" value="成绩查询" class="but">
+</div>
 </body>
 </html>

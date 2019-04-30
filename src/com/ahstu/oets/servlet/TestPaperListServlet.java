@@ -1,6 +1,8 @@
 package com.ahstu.oets.servlet;
 
+import com.ahstu.oets.dao.impl.QuestionDaoImpl;
 import com.ahstu.oets.dao.impl.TestPaperDaoImpl;
+import com.ahstu.oets.entity.Question;
 import com.ahstu.oets.entity.TestPaper;
 
 import javax.servlet.ServletException;
@@ -8,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -18,12 +21,16 @@ public class TestPaperListServlet extends HttpServlet {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
+        HttpSession session = request.getSession();
         String method = request.getParameter("method");
         TestPaperDaoImpl tpdi = new TestPaperDaoImpl();
+        QuestionDaoImpl qdi = new QuestionDaoImpl();
         PrintWriter out = response.getWriter();
+        ArrayList<Question> questionList = null;
         ArrayList<TestPaper> testPaperList = null;
         try {
             testPaperList = tpdi.getList();
+            questionList = qdi.getList();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -42,10 +49,12 @@ public class TestPaperListServlet extends HttpServlet {
             if (method.equals("update")) {
                 try {
                     request.setAttribute("testPaper", tpdi.getOne(Integer.valueOf(request.getParameter("post"))));
+                    session.setAttribute("testPaper",tpdi.getOne(Integer.valueOf(request.getParameter("post"))));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-                request.getRequestDispatcher("password.jsp").forward(request, response);
+                request.setAttribute("questionList",questionList);
+                request.getRequestDispatcher("update.jsp").forward(request, response);
             } else if (method.equals("insert")) {
                 response.sendRedirect("insert.jsp");
             } else if (method.equals("delete")) {

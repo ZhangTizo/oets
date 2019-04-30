@@ -5,6 +5,10 @@ import com.ahstu.oets.entity.TestPaper;
 import com.ahstu.oets.util.DateTransform;
 import com.ahstu.oets.util.DbUtil;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Map;
 
@@ -98,5 +102,52 @@ public class TestPaperDaoImpl implements TestPaperDao {
             testPaperList.add(testPaper);
         }
         return testPaperList;
+    }
+
+    @Override
+    public int setQuestion(int pid, int qid) throws Exception {
+        String sql = "insert into connection(pid,qid) value(?,?)";
+        ArrayList<Object> list = new ArrayList<>();
+        list.add(pid);
+        list.add(qid);
+        return DbUtil.executeUpdate(sql,list);
+    }
+
+    @Override
+    public boolean isExist(int qid) throws Exception {
+        String sql = "select * from connection where qid = ?";
+        Connection con = null;
+        PreparedStatement pst = null;
+        ResultSet rst = null;
+            try{
+                con = DbUtil.getConnection();
+                //sql语句
+                pst = con.prepareStatement(sql);
+                //设置参数
+                rst = pst.executeQuery();
+                if(rst.next()){
+                    return true;
+                }
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+            //最后关闭语句和连接
+            finally{
+                if(pst!=null){
+                    try {
+                        pst.close();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                }
+                if(con != null){
+                    try {
+                        con.close();
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+            return false;
     }
 }

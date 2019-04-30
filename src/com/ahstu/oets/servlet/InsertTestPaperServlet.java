@@ -36,8 +36,8 @@ public class InsertTestPaperServlet extends HttpServlet {
                 } else {
                     TestPaper testPaper = new TestPaper();
                     testPaper.setName(name);
-                    testPaper.setStart(DateTransform.StringToDate(start,"yyyy-MM-dd HH:mm"));
-                    testPaper.setEnd(DateTransform.StringToDate(end,"yyyy-MM-dd HH:mm"));
+                    testPaper.setStart(DateTransform.StringToDate(start, "yyyy-MM-dd HH:mm"));
+                    testPaper.setEnd(DateTransform.StringToDate(end, "yyyy-MM-dd HH:mm"));
                     tpdi.insert(testPaper);
                     out.print("<html>" +
                             "<body>" +
