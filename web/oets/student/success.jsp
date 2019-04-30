@@ -98,6 +98,9 @@
         <ul>
             <li>
                 <u style="color: darkblue;"><c:out value="${stuno}"></c:out></u>
+                <%
+                    String stuno = request.getParameter("stuno");
+                %>
                 <ul class="Box">
                     <li><a href="password.jsp">修改密码</a></li>
                     <li><a href="logout.jsp">注销</a></li>
@@ -107,8 +110,8 @@
     </div>
     <br><br>
 <div align="center">
-    <input type="button" onclick="location.href=''" value="准备考试" class="but">
-    <input type="button" onclick="location.href=''" value="成绩查询" class="but">
+    <input type="button" onclick="location.href='test.jsp'" value="准备考试" class="but">
+    <input type="button" onclick="location.href='score.jsp'" value="成绩查询" class="but">
 </div>
 </body>
 </html>
