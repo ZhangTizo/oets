@@ -46,7 +46,8 @@ public class StudentLoginServlet extends HttpServlet {
                             }
                             System.out.println("login success!!!");
                             session.setAttribute("stuno", stuno);
-                            response.sendRedirect("success.jsp");
+                            request.getRequestDispatcher("success.jsp").forward(request,response);
+                            //response.sendRedirect("success.jsp");
                         } else {    //密码错误，则不能登录
                             session.invalidate();
                             out.print("<html>" +

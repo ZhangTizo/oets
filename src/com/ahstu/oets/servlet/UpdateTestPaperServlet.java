@@ -33,7 +33,7 @@ public class UpdateTestPaperServlet extends HttpServlet {
             out.print("<html>" +
                     "<body>" +
                     "<script type=\'text/javascript\' language=\'javascript\'>\n" +
-                    "           alert(\'成功修改题目信息！！！\');\n" +
+                    "           alert(\'成功修改试卷信息！！！\');\n" +
                     "           window.document.location.href=\'TestPaperListServlet\';\n" +
                     "</script>" +
                     "</body>");

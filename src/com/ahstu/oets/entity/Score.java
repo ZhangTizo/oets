@@ -6,6 +6,7 @@ public class Score {
     private int id;
     private int pid;
     private String stuno;
+    private int score;
     private Date time;
 
     public int getId() {
@@ -30,6 +31,14 @@ public class Score {
 
     public void setStuno(String stuno) {
         this.stuno = stuno;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 
     public Date getTime() {

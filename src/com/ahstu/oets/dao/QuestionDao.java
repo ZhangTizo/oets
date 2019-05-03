@@ -10,4 +10,5 @@ public interface QuestionDao {
     public int delete(int id) throws Exception;
     public Question getOne(String name) throws Exception;
     public ArrayList<Question> getList() throws Exception;
+    public boolean isTrue(int id, String answer) throws Exception;
 }

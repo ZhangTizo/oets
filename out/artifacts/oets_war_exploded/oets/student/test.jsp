@@ -29,7 +29,7 @@
             e.printStackTrace();
         }
     %>
-    当前正在进行的考试<br>
+    <strong>当前正在进行的考试</strong><br>
     <select name="pid">
         <%
             TestPaperDaoImpl tpdi1 = new TestPaperDaoImpl();
@@ -47,7 +47,7 @@
     </select>
     <br>
     <input type="submit" value="开始考试"><br>
-    即将开始的考试<br>
+    <strong>即将开始的考试</strong><br>
     <%
         TestPaperDaoImpl tpdi2 = new TestPaperDaoImpl();
         for (int j : will) {
@@ -61,9 +61,6 @@
                 e.printStackTrace();
             }
         }
-    %>
-    <%
-        String stuno = request.getParameter("stuno");
     %>
     <br><a href="success.jsp">返回</a>
 </form>

@@ -1,6 +1,7 @@
 package com.ahstu.oets.dao.impl;
 
 import com.ahstu.oets.dao.TestPaperDao;
+import com.ahstu.oets.entity.Question;
 import com.ahstu.oets.entity.TestPaper;
 import com.ahstu.oets.util.DateTransform;
 import com.ahstu.oets.util.DbUtil;
@@ -114,40 +115,15 @@ public class TestPaperDaoImpl implements TestPaperDao {
     }
 
     @Override
-    public boolean isExist(int qid) throws Exception {
-        String sql = "select * from connection where qid = ?";
-        Connection con = null;
-        PreparedStatement pst = null;
-        ResultSet rst = null;
-            try{
-                con = DbUtil.getConnection();
-                //sql语句
-                pst = con.prepareStatement(sql);
-                //设置参数
-                rst = pst.executeQuery();
-                if(rst.next()){
-                    return true;
-                }
-            }catch(Exception e){
-                e.printStackTrace();
-            }
-            //最后关闭语句和连接
-            finally{
-                if(pst!=null){
-                    try {
-                        pst.close();
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
-                }
-                if(con != null){
-                    try {
-                        con.close();
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-            return false;
+    public ArrayList<Question> getQuestion(int pid) throws Exception {
+        String sql = "select qid from connection where pid = ?";
+        ArrayList<Question> questionList = new ArrayList<>();
+        QuestionDaoImpl qdi = new QuestionDaoImpl();
+        ArrayList<Object> list = new ArrayList<>();
+        list.add(pid);
+        for(Map<String,Object> m:DbUtil.executeQuery(sql,list)){
+            questionList.add(qdi.getOne((int) m.get("qid")));
+        }
+        return questionList;
     }
 }

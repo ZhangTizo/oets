@@ -20,7 +20,7 @@ public class QuestionDaoImpl implements QuestionDao {
         list.add(question.getOptionC());
         list.add(question.getOptionD());
         list.add(question.getAnswer());
-        return DbUtil.executeUpdate(sql,list);
+        return DbUtil.executeUpdate(sql, list);
     }
 
     @Override
@@ -51,15 +51,15 @@ public class QuestionDaoImpl implements QuestionDao {
         ArrayList<Object> list = new ArrayList<>();
         list.add(name);
         Question question = null;
-        for(Map<String,Object> m:DbUtil.executeQuery(sql,list)){
+        for (Map<String, Object> m : DbUtil.executeQuery(sql, list)) {
             question = new Question();
-            question.setId((int)m.get("id"));
-            question.setName((String)m.get("name"));
-            question.setOptionA((String)m.get("optionA"));
-            question.setOptionB((String)m.get("optionB"));
-            question.setOptionC((String)m.get("optionC"));
-            question.setOptionD((String)m.get("optionD"));
-            question.setAnswer((String)m.get("answer"));
+            question.setId((int) m.get("id"));
+            question.setName((String) m.get("name"));
+            question.setOptionA((String) m.get("optionA"));
+            question.setOptionB((String) m.get("optionB"));
+            question.setOptionC((String) m.get("optionC"));
+            question.setOptionD((String) m.get("optionD"));
+            question.setAnswer((String) m.get("answer"));
         }
         return question;
     }
@@ -69,15 +69,15 @@ public class QuestionDaoImpl implements QuestionDao {
         ArrayList<Object> list = new ArrayList<>();
         list.add(id);
         Question question = null;
-        for(Map<String,Object> m:DbUtil.executeQuery(sql,list)){
+        for (Map<String, Object> m : DbUtil.executeQuery(sql, list)) {
             question = new Question();
-            question.setId((int)m.get("id"));
-            question.setName((String)m.get("name"));
-            question.setOptionA((String)m.get("optionA"));
-            question.setOptionB((String)m.get("optionB"));
-            question.setOptionC((String)m.get("optionC"));
-            question.setOptionD((String)m.get("optionD"));
-            question.setAnswer((String)m.get("answer"));
+            question.setId((int) m.get("id"));
+            question.setName((String) m.get("name"));
+            question.setOptionA((String) m.get("optionA"));
+            question.setOptionB((String) m.get("optionB"));
+            question.setOptionC((String) m.get("optionC"));
+            question.setOptionD((String) m.get("optionD"));
+            question.setAnswer((String) m.get("answer"));
         }
         return question;
     }
@@ -86,15 +86,15 @@ public class QuestionDaoImpl implements QuestionDao {
     public ArrayList<Question> getList() throws Exception {
         String sql = "select * from question";
         ArrayList<Question> questionList = new ArrayList<>();
-        for (Map<String,Object> m:DbUtil.executeQuery(sql,null)){
+        for (Map<String, Object> m : DbUtil.executeQuery(sql, null)) {
             Question question = new Question();
-            question.setId((int)m.get("id"));
-            question.setName((String)m.get("name"));
-            question.setOptionA((String)m.get("optionA"));
-            question.setOptionB((String)m.get("optionB"));
-            question.setOptionC((String)m.get("optionC"));
-            question.setOptionD((String)m.get("optionD"));
-            question.setAnswer((String)m.get("answer"));
+            question.setId((int) m.get("id"));
+            question.setName((String) m.get("name"));
+            question.setOptionA((String) m.get("optionA"));
+            question.setOptionB((String) m.get("optionB"));
+            question.setOptionC((String) m.get("optionC"));
+            question.setOptionD((String) m.get("optionD"));
+            question.setAnswer((String) m.get("answer"));
             questionList.add(question);
         }
         return questionList;
@@ -104,18 +104,41 @@ public class QuestionDaoImpl implements QuestionDao {
         ArrayList<Question> questionList = new ArrayList<>();
         String sql = "select * from question where name like ?";
         ArrayList<Object> list = new ArrayList<>();
-        list.add("%"+search+"%");
-        for (Map<String,Object> m:DbUtil.executeQuery(sql,list)){
+        list.add("%" + search + "%");
+        for (Map<String, Object> m : DbUtil.executeQuery(sql, list)) {
             Question question = new Question();
-            question.setId((int)m.get("id"));
-            question.setName((String)m.get("name"));
-            question.setOptionA((String)m.get("optionA"));
-            question.setOptionB((String)m.get("optionB"));
-            question.setOptionC((String)m.get("optionC"));
-            question.setOptionD((String)m.get("optionD"));
-            question.setAnswer((String)m.get("answer"));
+            question.setId((int) m.get("id"));
+            question.setName((String) m.get("name"));
+            question.setOptionA((String) m.get("optionA"));
+            question.setOptionB((String) m.get("optionB"));
+            question.setOptionC((String) m.get("optionC"));
+            question.setOptionD((String) m.get("optionD"));
+            question.setAnswer((String) m.get("answer"));
             questionList.add(question);
         }
         return questionList;
+    }
+
+    @Override
+    public boolean isTrue(int id, String answer) throws Exception {
+        String sql = "select * from question where id = ?";
+        ArrayList<Object> list = new ArrayList<>();
+        list.add(id);
+        DbUtil.executeQuery(sql, list);
+        Question question = null;
+        for (Map<String, Object> m : DbUtil.executeQuery(sql, list)) {
+            question = new Question();
+            question.setId((int) m.get("id"));
+            question.setName((String) m.get("name"));
+            question.setOptionA((String) m.get("optionA"));
+            question.setOptionB((String) m.get("optionB"));
+            question.setOptionC((String) m.get("optionC"));
+            question.setOptionD((String) m.get("optionD"));
+            question.setAnswer((String) m.get("answer"));
+        }
+        if (question != null && question.getAnswer().equals(answer)) {
+            return true;
+        }
+        return false;
     }
 }

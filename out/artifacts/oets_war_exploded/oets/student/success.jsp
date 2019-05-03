@@ -98,9 +98,6 @@
         <ul>
             <li>
                 <u style="color: darkblue;"><c:out value="${stuno}"></c:out></u>
-                <%
-                    String stuno = request.getParameter("stuno");
-                %>
                 <ul class="Box">
                     <li><a href="password.jsp">修改密码</a></li>
                     <li><a href="logout.jsp">注销</a></li>

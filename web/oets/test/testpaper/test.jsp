@@ -5,36 +5,40 @@
     <title>正在考试</title>
 </head>
 <body>
-<div id="showTimes"></div>
 <%
     long lastTime = (long) request.getAttribute("lastTime");
 %>
 <script>
-    var second = <%= lastTime / 1000%>; // 剩余秒数
-    // 写一个方法，将秒数专为天数
-    var toDays = function(){
-        var s = second % 60; // 秒
-        var mi = (second - s) / 60 % 60; // 分钟
-        var h = ((second - s) / 60 - mi ) / 60 % 24; // 小时
-        var d = (((second - s) / 60 - mi ) / 60 - h ) / 24 // 天
-        return "剩余：" + d + "天" + h + "小时" + mi + "分钟" + s + "秒";
+    var lastTime = <%= lastTime / 1000%>;
+    var toSecond = function () {
+        var s = lastTime % 60; // 秒
+        var m = (lastTime - s) / 60 % 60; // 分钟
+        var h = ((lastTime - s) / 60 - m) / 60 % 24; // 小时
+        return "剩余时间：" + h + "小时" + m + "分钟" + s + "秒";
     }
     //然后写一个定时器
-    window.setInterval(function(){
-        second --;
-        document.getElementById("showTimes").innerHTML = toDays ();
+    window.setInterval(function () {
+        lastTime--;
+        document.getElementById("showTime").innerHTML = toSecond();
     }, 1000);
 </script>
-<form method="post">
+<form method="post" action="../test/testpaper/TestEndServlet">
+    当前学生:<c:out value="${stuno}"></c:out><div id="showTime"></div>
+    <%
+        int pid = (int)request.getAttribute("pid");
+    %>
     <div align="center">
         <h1><strong>${testPaper.name}</strong></h1>
-        <c:forEach var="question" items="${questionList}">
-            ${question.name}<br>
-            <label><input name="select" type="radio"/>A.${question.optionA}</label><br>
-            <label><input name="select" type="radio"/>B.${question.optionB}</label><br>
-            <label><input name="select" type="radio"/>C.${question.optionC}</label><br>
-            <label><input name="select" type="radio"/>D.${question.optionD}</label><br><br><br>
+        <input type="text" hidden="hidden" name="pid" value="<%=pid%>">
+        <c:forEach var="question" items="${questionList}" varStatus="status">
+            ${status.index + 1}.${question.name}<br>
+            <label><input name="${question.id}" type="radio" value="A"/>A.${question.optionA}</label><br>
+            <label><input name="${question.id}" type="radio" value="B"/>B.${question.optionB}</label><br>
+            <label><input name="${question.id}" type="radio" value="C"/>C.${question.optionC}</label><br>
+            <label><input name="${question.id}" type="radio" value="D"/>D.${question.optionD}</label><br><br><br>
         </c:forEach>
+        <input type="submit" value="交卷">&nbsp;
+        <a href="../student/test.jsp">返回</a>
     </div>
 </form>
 </body>
