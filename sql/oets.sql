@@ -11,11 +11,34 @@
  Target Server Version : 80011
  File Encoding         : 65001
 
- Date: 15/04/2019 14:27:08
+ Date: 03/05/2019 15:49:36
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for connection
+-- ----------------------------
+DROP TABLE IF EXISTS `connection`;
+CREATE TABLE `connection`  (
+  `pid` int(11) NOT NULL,
+  `qid` int(11) NOT NULL
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of connection
+-- ----------------------------
+INSERT INTO `connection` VALUES (2, 3);
+INSERT INTO `connection` VALUES (2, 4);
+INSERT INTO `connection` VALUES (1, 3);
+INSERT INTO `connection` VALUES (1, 4);
+INSERT INTO `connection` VALUES (4, 3);
+INSERT INTO `connection` VALUES (4, 4);
+INSERT INTO `connection` VALUES (5, 3);
+INSERT INTO `connection` VALUES (5, 4);
+INSERT INTO `connection` VALUES (7, 3);
+INSERT INTO `connection` VALUES (7, 4);
 
 -- ----------------------------
 -- Table structure for manager
@@ -35,17 +58,6 @@ CREATE TABLE `manager`  (
 INSERT INTO `manager` VALUES (14, 'admin', '21232f297a57a5a743894a0e4a801fc3', NULL);
 
 -- ----------------------------
--- Table structure for paperquestion
--- ----------------------------
-DROP TABLE IF EXISTS `paperquestion`;
-CREATE TABLE `paperquestion`  (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `pid` int(11) NOT NULL,
-  `qid` int(11) NOT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
 -- Table structure for question
 -- ----------------------------
 DROP TABLE IF EXISTS `question`;
@@ -58,12 +70,39 @@ CREATE TABLE `question`  (
   `optionD` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `answer` char(1) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of question
 -- ----------------------------
 INSERT INTO `question` VALUES (3, 'sad', 'g', 't', 'j', 'y', 'B');
+INSERT INTO `question` VALUES (4, 'dsad', 'a', 'v', 's', 'r', 'A');
+
+-- ----------------------------
+-- Table structure for score
+-- ----------------------------
+DROP TABLE IF EXISTS `score`;
+CREATE TABLE `score`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL,
+  `stuno` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `score` int(11) NOT NULL,
+  `time` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of score
+-- ----------------------------
+INSERT INTO `score` VALUES (1, 7, 's001', 10, '2019-05-03 14:56:19');
+INSERT INTO `score` VALUES (2, 7, 's001', 20, '2019-05-03 14:56:19');
+INSERT INTO `score` VALUES (3, 7, 's001', 10, '2019-05-03 14:58:04');
+INSERT INTO `score` VALUES (4, 7, 's001', 20, '2019-05-03 14:58:04');
+INSERT INTO `score` VALUES (5, 7, 's001', 20, '2019-05-03 15:00:26');
+INSERT INTO `score` VALUES (6, 7, 's001', 10, '2019-05-03 15:03:55');
+INSERT INTO `score` VALUES (7, 7, 's001', 10, '2019-05-03 15:06:56');
+INSERT INTO `score` VALUES (8, 7, 's001', 0, '2019-05-03 15:39:33');
+INSERT INTO `score` VALUES (9, 7, 's001', 10, '2019-05-03 15:40:44');
 
 -- ----------------------------
 -- Table structure for student
@@ -79,7 +118,7 @@ CREATE TABLE `student`  (
   `memo` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `remember` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 37 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 38 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of student
@@ -104,7 +143,7 @@ CREATE TABLE `teacher`  (
   `age` int(3) NOT NULL,
   `memo` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of teacher
@@ -121,6 +160,17 @@ CREATE TABLE `testpaper`  (
   `start` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `end` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of testpaper
+-- ----------------------------
+INSERT INTO `testpaper` VALUES (1, 'sdasdasd', '2019-04-30 06:00:00', '2019-04-30 08:52:00');
+INSERT INTO `testpaper` VALUES (2, '21212112', '2019-05-01 14:00:00', '2019-05-01 16:00:00');
+INSERT INTO `testpaper` VALUES (3, 'asdsadasd', '2019-04-30 21:42:00', '2019-04-30 23:42:00');
+INSERT INTO `testpaper` VALUES (4, 'dfasdasdad', '2019-05-01 12:00:00', '2019-05-01 16:00:00');
+INSERT INTO `testpaper` VALUES (5, 'adsfgdsd54546', '2019-05-01 19:54:00', '2019-05-01 20:54:00');
+INSERT INTO `testpaper` VALUES (6, 'adgjtyuyuj', '2019-05-02 23:11:00', '2019-05-02 23:55:00');
+INSERT INTO `testpaper` VALUES (7, '15616fgdgfgdfg', '2019-05-03 14:27:00', '2019-05-03 16:27:00');
 
 SET FOREIGN_KEY_CHECKS = 1;
