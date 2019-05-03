@@ -25,3 +25,8 @@
 #### 1.JDK  11.0.1
 #### 2.MySQL  8.0.11(数据库文件在sql文件夹中，运行即可使用，附带测试数据)
 #### 3.Tomcat 9.0.6
+
+## 五.系统运行截图
+#### 1.登录界面
+![image](https://note.youdao.com/yws/api/personal/file/108292ED122049B8B6EE13173FB6C039?method=download&shareKey=4634a213ca2b44b7d85bbd14469087cf)
+#### 2....
