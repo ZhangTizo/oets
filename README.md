@@ -1,5 +1,6 @@
 # Online English Test System
-### ——在线英语考试系统(该项目使用IntelliJ IDEA开发,以JAVA为基础,使用Servlet处理事务,不使用框架)
+### ——在线英语考试系统
+##### 该项目使用IntelliJ IDEA开发,以JAVA为基础,使用Servlet处理事务,不使用框架
 
 ## 一.管理员
 #### 1.学生管理
