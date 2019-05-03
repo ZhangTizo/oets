@@ -8,12 +8,8 @@
             background: deepskyblue;
         }
 
-        html {
-            background-color: #B5DEF2;
-        }
-
         .wrapper {
-            margin: 200px 0 140px 760px;
+            margin: 260px 0 140px 1180px;
             width: 884px;
         }
 
@@ -87,6 +83,11 @@
 
         .loginBox label[for="remember"] {
             font: 11px Arial;
+        }
+
+        body {
+            background-image: url("../../image/background.jpg");
+            background-size: 100% 100%;
         }
     </style>
 </head>

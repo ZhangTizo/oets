@@ -8,12 +8,13 @@
             background: deepskyblue;
         }
 
-        html {
-            background-color: #B5DEF2;
+        body {
+            background-image: url("../../image/background.jpg");
+            background-size: 100% 100%;
         }
 
         .wrapper {
-            margin: 200px 0 140px 760px;
+            margin: 280px 0 140px 1180px;
             width: 884px;
         }
 
