@@ -13,4 +13,5 @@ public interface TestPaperDao {
     public ArrayList<TestPaper> getList() throws Exception;
     public int setQuestion(int pid, int qid) throws Exception;
     public ArrayList<Question> getQuestion(int pid) throws Exception;
+    public int deleteQuestion(int pid) throws Exception;
 }

@@ -53,8 +53,8 @@ public class TestPaperDaoImpl implements TestPaperDao {
             testPaper = new TestPaper();
             testPaper.setId((int)m.get("id"));
             testPaper.setName((String)m.get("name"));
-            testPaper.setStart(DateTransform.StringToDate((String)m.get("start"),"yyyy-MM-dd HH:mm"));
-            testPaper.setEnd(DateTransform.StringToDate((String)m.get("end"),"yyyy-MM-dd HH:mm"));
+            testPaper.setStart(DateTransform.StringToDate((String)m.get("start"),"yyyy-MM-dd HH:mm:ss"));
+            testPaper.setEnd(DateTransform.StringToDate((String)m.get("end"),"yyyy-MM-dd HH:mm:ss"));
         }
         return testPaper;
     }
@@ -68,8 +68,8 @@ public class TestPaperDaoImpl implements TestPaperDao {
             testPaper = new TestPaper();
             testPaper.setId((int)m.get("id"));
             testPaper.setName((String)m.get("name"));
-            testPaper.setStart(DateTransform.StringToDate((String)m.get("start"),"yyyy-MM-dd HH:mm"));
-            testPaper.setEnd(DateTransform.StringToDate((String)m.get("end"),"yyyy-MM-dd HH:mm"));
+            testPaper.setStart(DateTransform.StringToDate((String)m.get("start"),"yyyy-MM-dd HH:mm:ss"));
+            testPaper.setEnd(DateTransform.StringToDate((String)m.get("end"),"yyyy-MM-dd HH:mm:ss"));
         }
         return testPaper;
     }
@@ -82,8 +82,8 @@ public class TestPaperDaoImpl implements TestPaperDao {
             TestPaper testPaper = new TestPaper();
             testPaper.setId((int)m.get("id"));
             testPaper.setName((String)m.get("name"));
-            testPaper.setStart(DateTransform.StringToDate((String)m.get("start"),"yyyy-MM-dd HH:mm"));
-            testPaper.setEnd(DateTransform.StringToDate((String)m.get("end"),"yyyy-MM-dd HH:mm"));
+            testPaper.setStart(DateTransform.StringToDate((String)m.get("start"),"yyyy-MM-dd HH:mm:ss"));
+            testPaper.setEnd(DateTransform.StringToDate((String)m.get("end"),"yyyy-MM-dd HH:mm:ss"));
             testPaperList.add(testPaper);
         }
         return testPaperList;
@@ -98,8 +98,8 @@ public class TestPaperDaoImpl implements TestPaperDao {
             TestPaper testPaper = new TestPaper();
             testPaper.setId((int)m.get("id"));
             testPaper.setName((String)m.get("name"));
-            testPaper.setStart(DateTransform.StringToDate((String)m.get("start"),"yyyy-MM-dd HH:mm"));
-            testPaper.setEnd(DateTransform.StringToDate((String)m.get("end"),"yyyy-MM-dd HH:mm"));
+            testPaper.setStart(DateTransform.StringToDate((String)m.get("start"),"yyyy-MM-dd HH:mm:ss"));
+            testPaper.setEnd(DateTransform.StringToDate((String)m.get("end"),"yyyy-MM-dd HH:mm:ss"));
             testPaperList.add(testPaper);
         }
         return testPaperList;
@@ -125,5 +125,13 @@ public class TestPaperDaoImpl implements TestPaperDao {
             questionList.add(qdi.getOne((int) m.get("qid")));
         }
         return questionList;
+    }
+
+    @Override
+    public int deleteQuestion(int pid) throws Exception {
+        String sql = "delete from connection where pid = ?";
+        ArrayList<Object> list = new ArrayList<>();
+        list.add(pid);
+        return DbUtil.executeUpdate(sql,list);
     }
 }

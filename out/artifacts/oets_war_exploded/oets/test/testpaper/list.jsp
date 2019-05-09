@@ -5,10 +5,11 @@
 <head>
     <title>试卷列表</title>
     <style>
-        body{
-            background-size: 100%;
-            background-color: #B5DEF2;
+        body {
+            background-image: url("../../../image/background.jpg");
+            background-size: 100% 100%;
         }
+
         h1 {
             background-color: deepskyblue;
         }
@@ -60,6 +61,7 @@
             <th>开始时间</th>
             <th>结束时间</th>
             <th>预览</th>
+            <th>操作</th>
         </tr>
         <c:forEach var="testPaper" items="${testPaperList}">
             <tr>
@@ -67,6 +69,7 @@
                 <td><fmt:formatDate value="${testPaper.start}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
                 <td><fmt:formatDate value="${testPaper.end}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
                 <td><a href="TestPaperPreviewServlet?post=${testPaper.id}" target="_blank">预览</a></td>
+                <td><a href="javascript:if(confirm('确实要删除吗?'))location='TestPaperListServlet?method=delete&post=${testPaper.id}'">删除</a></td>
             </tr>
         </c:forEach>
     </table>

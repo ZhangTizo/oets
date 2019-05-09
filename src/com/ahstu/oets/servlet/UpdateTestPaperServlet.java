@@ -2,6 +2,7 @@ package com.ahstu.oets.servlet;
 
 import com.ahstu.oets.dao.impl.TestPaperDaoImpl;
 import com.ahstu.oets.entity.TestPaper;
+import com.ahstu.oets.util.DateTransform;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,15 +22,18 @@ public class UpdateTestPaperServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         TestPaperDaoImpl tpdi = new TestPaperDaoImpl();
         HttpSession session = request.getSession();
-        TestPaper testPaper = (TestPaper)session.getAttribute("testPaper");
+        TestPaper testPaper = (TestPaper) session.getAttribute("testPaper");
         int pid = testPaper.getId();
         String[] check = request.getParameterValues("check");
         try {
-            for (String i:check)
-            {
-                tpdi.setQuestion(pid,Integer.parseInt(i));
+            testPaper.setName(request.getParameter("name"));
+            testPaper.setStart(DateTransform.StringToDate(request.getParameter("start"), "yyyy-MM-dd HH:mm:ss"));
+            testPaper.setEnd(DateTransform.StringToDate(request.getParameter("end"), "yyyy-MM-dd HH:mm:ss"));
+            tpdi.deleteQuestion(pid);   //为了防止已经存在的题目重复添加，在此之前把表中该试卷所包含的所有试题删除
+            for (String i : check) {
+                tpdi.setQuestion(pid, Integer.parseInt(i));
             }
-            System.out.println(tpdi.update(testPaper));
+            tpdi.update(testPaper);
             out.print("<html>" +
                     "<body>" +
                     "<script type=\'text/javascript\' language=\'javascript\'>\n" +

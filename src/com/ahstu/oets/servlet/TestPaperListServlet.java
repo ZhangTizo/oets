@@ -28,6 +28,7 @@ public class TestPaperListServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         ArrayList<Question> questionList = null;
         ArrayList<TestPaper> testPaperList = null;
+        ArrayList<Question> questions = null;
         try {
             testPaperList = tpdi.getList();
             questionList = qdi.getList();
@@ -49,7 +50,8 @@ public class TestPaperListServlet extends HttpServlet {
             if (method.equals("update")) {
                 try {
                     request.setAttribute("testPaper", tpdi.getOne(Integer.valueOf(request.getParameter("post"))));
-                    session.setAttribute("testPaper",tpdi.getOne(Integer.valueOf(request.getParameter("post"))));
+                    session.setAttribute("testPaper", tpdi.getOne(Integer.valueOf(request.getParameter("post"))));
+                    request.setAttribute("questions", tpdi.getQuestion(Integer.valueOf(request.getParameter("post"))));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

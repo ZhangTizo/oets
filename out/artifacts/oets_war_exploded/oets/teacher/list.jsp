@@ -4,9 +4,9 @@
 <head>
     <title>教师列表</title>
     <style>
-        body{
-            background-size: 100%;
-            background-color: #B5DEF2;
+        body {
+            background-image: url("../../image/background.jpg");
+            background-size: 100% 100%;
         }
         h1 {
             background-color: deepskyblue;
@@ -50,7 +50,7 @@
         <h1>教师管理</h1>
     </div><br>
     <div align="center"><br>
-        学号:<input size="16" type="text" name="search" placeholder="请输入要查询的教师工号或姓名">&nbsp;&nbsp;
+        教师工号:<input size="16" type="text" name="search" placeholder="请输入要查询的教师工号或姓名">&nbsp;&nbsp;
         <input type="submit" value="查询"><br><br>
     </div>
     <table align="center" border="1" cellpadding="15" class="gridtable">

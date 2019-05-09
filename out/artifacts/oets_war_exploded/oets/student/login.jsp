@@ -3,13 +3,8 @@
 <head>
     <title>用户登录</title>
     <style>
-        h1
-        {
-            background: deepskyblue;
-        }
-
         .wrapper {
-            margin: 260px 0 140px 1180px;
+            margin: 12% 0 0 40%;
             width: 884px;
         }
 
@@ -89,6 +84,11 @@
             background-image: url("../../image/background.jpg");
             background-size: 100% 100%;
         }
+        .foot {
+            left: 37.5%;
+            bottom: 0;
+            position: absolute;
+        }
     </style>
 </head>
 <body>
@@ -111,5 +111,6 @@
         </div>
     </form>
 </div>
+<div class="foot" align="center">Copyright © 2018-2019 <font color="#8a2be2">OETS英语在线考试系统</font> All Rights Reserved<br><br></div>
 </body>
 </html>

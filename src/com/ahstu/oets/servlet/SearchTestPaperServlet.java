@@ -21,8 +21,8 @@ public class SearchTestPaperServlet extends HttpServlet {
         String search = request.getParameter("search");
         TestPaperDaoImpl tpdi = new TestPaperDaoImpl();
         PrintWriter out = response.getWriter();
-        if(request.getParameter("page")!=null){
-            if(request.getParameter("page").equals("")){
+        if (request.getParameter("page")!=null){
+            if (request.getParameter("page").equals("")){
                 out.print("<html>" +
                         "<body>" +
                         "<script type=\'text/javascript\' language=\'javascript\'>\n" +
@@ -40,9 +40,10 @@ public class SearchTestPaperServlet extends HttpServlet {
                 }
                 int pages = testPaperList.size()/10+1;
                 int page = Integer.parseInt(request.getParameter("page"));
-                System.out.println(page+" "+(testPaperList.size()/10+1));
-                if(page>(testPaperList.size()/10+1) || page<1){
-                    System.out.println(page+" "+testPaperList.size()/10+1);
+                if(page>=1 && page<=pages){
+                    System.out.println("page = "+page+"--- pages = "+pages);
+                }else {
+                    page = -1;
                     out.print("<html>" +
                             "<body>" +
                             "<script type=\'text/javascript\' language=\'javascript\'>\n" +

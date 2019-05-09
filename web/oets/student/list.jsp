@@ -4,10 +4,11 @@
 <head>
     <title>学生列表</title>
     <style>
-        body{
-            background-size: 100%;
-            background-color: #B5DEF2;
+        body {
+            background-image: url("../../image/background.jpg");
+            background-size: 100% 100%;
         }
+
         h1 {
             background-color: deepskyblue;
         }

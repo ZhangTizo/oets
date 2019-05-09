@@ -61,12 +61,8 @@
         }
 
         body{
-            background-size: 100%;
-            background-color: #B5DEF2;
-        }
-
-        img{
-            background-repeat : repeat;
+            background-image: url("../../image/main.jpg");
+            background-size: 100% 100%;
         }
 
         .but {
@@ -93,6 +89,9 @@
     </style>
 </head>
 <body>
+<div align="center">
+    <img src="../../image/head.jpg" width="100%">
+</div>
 <div class="menuDiv" style="float: top">
     管理员:&nbsp;
 </div>
@@ -106,12 +105,16 @@
         </li>
     </ul>
 </div>
+<div align="center">
+    <h1>欢迎使用</h1>
+</div>
 <br><br>
 <div align="center">
     <input type="button" onclick="location.href='../student/StudentListServlet'" value="学生管理" class="but">&nbsp;&nbsp;&nbsp;&nbsp;
     <input type="button" onclick="location.href='../teacher/TeacherListServlet'" value="教师管理" class="but">&nbsp;&nbsp;&nbsp;&nbsp;
     <input type="button" onclick="location.href='../test/question/QuestionListServlet'" value="题库管理" class="but">&nbsp;&nbsp;&nbsp;&nbsp;
     <input type="button" onclick="location.href='../test/testpaper/TestPaperListServlet'" value="试卷管理" class="but">&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" onclick="location.href='../test/testpaper/ScoreServlet'" value="成绩查询" class="but">&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 </body>
 </html>

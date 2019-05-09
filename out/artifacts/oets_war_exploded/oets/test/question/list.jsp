@@ -4,39 +4,42 @@
 <head>
     <title>题库列表</title>
     <style>
-        body{
-            background-size: 100%;
-            background-color: #B5DEF2;
+        body {
+            background-image: url("../../../image/background.jpg");
+            background-size: 100% 100%;
         }
+
         h1 {
             background-color: deepskyblue;
         }
-        table.gridtable{
-            font-family:verdana,arial,sans-serif;
-            font-size:18px;
-            color:#333333;
-            border-width:1px;
-            border-color:#666666;
-            border-collapse:collapse;
-        }
-        table.gridtable th{
-            text-align:center;
-            width: 150px;
-            border-width:1px;
-            padding:8px;
-            border-style:solid;
-            border-color:#666666;
-            background-color:#dedede;
-        }
-        table.gridtable td{
-            text-align:center;
-            width: 150px;
-            border-width:1px;
-            padding:8px;
-            border-style:solid;
-            border-color:#666666;
-            background-color:#ffffff;
-        }
+
+        /*table.gridtable{*/
+            /*font-family:verdana,arial,sans-serif;*/
+            /*font-size:18px;*/
+            /*color:#333333;*/
+            /*border-width:1px;*/
+            /*border-color:#666666;*/
+            /*border-collapse:collapse;*/
+        /*}*/
+        /*table.gridtable th{*/
+            /*text-align:center;*/
+            /*width: 150px;*/
+            /*border-width:1px;*/
+            /*padding:8px;*/
+            /*border-style:solid;*/
+            /*border-color:#666666;*/
+            /*background-color:#dedede;*/
+        /*}*/
+        /*table.gridtable td{*/
+            /*text-align:center;*/
+            /*width: 150px;*/
+            /*border-width:1px;*/
+            /*padding:8px;*/
+            /*border-style:solid;*/
+            /*border-color:#666666;*/
+            /*background-color:#ffffff;*/
+        /*}*/
+
     </style>
 </head>
 <body>
@@ -51,28 +54,51 @@
         查询:<input size="16" type="text" name="search" placeholder="请输入要查询题目名称">&nbsp;&nbsp;
         <input type="submit" value="查询"><br><br>
     </div>
-    <table align="center" border="1" cellpadding="15" class="gridtable">
-        <tr>
-            <th>题目名称</th>
-            <th>选项A</th>
-            <th>选项B</th>
-            <th>选项C</th>
-            <th>选项D</th>
-            <th>答案</th>
-            <th>操作</th>
-        </tr>
+    <%--<table align="center" border="1" cellpadding="15" class="gridtable">--%>
+        <%--<tr>--%>
+            <%--<th>题目名称</th>--%>
+            <%--<th>选项A</th>--%>
+            <%--<th>选项B</th>--%>
+            <%--<th>选项C</th>--%>
+            <%--<th>选项D</th>--%>
+            <%--<th>答案</th>--%>
+            <%--<th>操作</th>--%>
+        <%--</tr>--%>
+        <%--<c:forEach var="question" items="${questionList}">--%>
+            <%--<tr>--%>
+                <%--<td>${question.name}</td>--%>
+                <%--<td>${question.optionA}</td>--%>
+                <%--<td>${question.optionB}</td>--%>
+                <%--<td>${question.optionC}</td>--%>
+                <%--<td>${question.optionD}</td>--%>
+                <%--<td>${question.answer}</td>--%>
+                <%--<td>--%>
+                    <%--<a href="QuestionListServlet?method=update&post=${question.id}">修改</a>--%>
+                    <%--&nbsp;&nbsp;--%>
+                    <%--<a href="javascript:if(confirm('确实要删除吗?'))location='QuestionListServlet?method=delete&post=${question.id}'">删除</a>--%>
+                <%--</td>--%>
+            <%--</tr>--%>
+        <%--</c:forEach>--%>
+    <%--</table>--%>
+    <table cellspacing="0" style="border:0;min-height: 400px;margin:0 auto;">
         <c:forEach var="question" items="${questionList}">
             <tr>
-                <td>${question.name}</td>
-                <td>${question.optionA}</td>
-                <td>${question.optionB}</td>
-                <td>${question.optionC}</td>
-                <td>${question.optionD}</td>
-                <td>${question.answer}</td>
-                <td>
-                    <a href="QuestionListServlet?method=update&post=${question.id}">修改</a>
-                    &nbsp;&nbsp;
-                    <a href="javascript:if(confirm('确实要删除吗?'))location='QuestionListServlet?method=delete&post=${question.id}'">删除</a>
+                <td style="width:1000px;min-height:100px;border:1px solid black;border-radius:5px;">
+                    <div class="question_name" style="width:900px;min-height:20px;margin:0 auto;padding:10px;">
+                        question:&nbsp;&nbsp;<span>${question.name}</span>
+                    </div>
+                    <div class="question_bottom" style="width:900px;min-height:80px;margin:0 auto;">
+                        <div class="question_option" style="width:800px;min-height:80px;float:left;padding:10px;">
+                            A:&nbsp;&nbsp;<span>${question.optionA}</span><br>
+                            B:&nbsp;&nbsp;<span>${question.optionB}</span><br>
+                            C:&nbsp;&nbsp;<span>${question.optionC}</span><br>
+                            D:&nbsp;&nbsp;<span>${question.optionD}</span><br>
+                        </div>
+                        <div class="question_opreation" style="width:80px;min-height:80px;float:left;">
+                            <a href="QuestionListServlet?method=update&post=${question.id}">修改</a>
+                            <a href="javascript:if(confirm('确实要删除吗?'))location='QuestionListServlet?method=delete&post=${question.id}'">删除</a>
+                        </div>
+                    </div>
                 </td>
             </tr>
         </c:forEach>

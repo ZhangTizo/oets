@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-@WebServlet(name = "SearchQuestionServlet",value = "/oets/test/qusetion/SearchQuestionServlet")
+@WebServlet(name = "SearchQuestionServlet",value = "/oets/test/question/SearchQuestionServlet")
 public class SearchQuestionServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
@@ -40,9 +40,10 @@ public class SearchQuestionServlet extends HttpServlet {
                 }
                 int pages = questionList.size()/10+1;
                 int page = Integer.parseInt(request.getParameter("page"));
-                System.out.println(page+" "+(questionList.size()/10+1));
-                if(page>(questionList.size()/10+1) || page<1){
-                    System.out.println(page+" "+questionList.size()/10+1);
+                if(page>=1 && page<=pages){
+                    System.out.println("page = "+page+"--- pages = "+pages);
+                }else {
+                    page = -1;
                     out.print("<html>" +
                             "<body>" +
                             "<script type=\'text/javascript\' language=\'javascript\'>\n" +

@@ -39,9 +39,10 @@ public class SearchStudentServlet extends HttpServlet {
                 }
                 int pages = studentList.size()/10+1;
                 int page = Integer.parseInt(request.getParameter("page"));
-                System.out.println(page+" "+(studentList.size()/10+1));
-                if(page>(studentList.size()/10+1) || page<1){
-                    System.out.println(page+" "+studentList.size()/10+1);
+                if(page>=1 && page<=pages){
+                    System.out.println("page = "+page+"--- pages = "+pages);
+                }else {
+                    page = -1;
                     out.print("<html>" +
                             "<body>" +
                             "<script type=\'text/javascript\' language=\'javascript\'>\n" +

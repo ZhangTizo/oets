@@ -10,7 +10,8 @@
         }
 
         body {
-            background-color: #B5DEF2;
+            background-image: url("../../../image/background.jpg");
+            background-size: 100% 100%;
         }
 
         .wrapper {

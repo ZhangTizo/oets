@@ -21,9 +21,10 @@ public class TestPaperPreviewServlet extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         TestPaperDaoImpl tpdi = new TestPaperDaoImpl();
         QuestionDaoImpl qdi = new QuestionDaoImpl();
+        int pid = Integer.parseInt(request.getParameter("post"));
         ArrayList<Question> questionList = null;
         try {
-            questionList = qdi.getList();
+            questionList = tpdi.getQuestion(pid);
             request.setAttribute("questionList",questionList);
             request.setAttribute("testPaper", tpdi.getOne(Integer.valueOf(request.getParameter("post"))));
             request.getRequestDispatcher("preview.jsp").forward(request, response);

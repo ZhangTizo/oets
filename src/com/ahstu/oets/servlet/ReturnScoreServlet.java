@@ -9,8 +9,8 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "ReturnQuestionServlet",value = "/oets/test/question/ReturnQuestionServlet")
-public class ReturnQuestionServlet extends HttpServlet {
+@WebServlet(name = "ReturnScoreServlet",value = "/oets/test/testpaper/ReturnScoreServlet")
+public class ReturnScoreServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,IOException {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("utf-8");

@@ -59,12 +59,8 @@
         }
 
         body{
-            background-size: 100%;
-            background-color: #B5DEF2;
-        }
-
-        img{
-            background-repeat : repeat;
+            background-image: url("../../image/main.jpg");
+            background-size: 100% 100%;
         }
 
         .but {
@@ -91,6 +87,9 @@
     </style>
 </head>
 <body>
+<div align="center">
+    <img src="../../image/head.jpg" width="100%">
+</div>
     <div class="menuDiv" style="float: top">
         当前学生:&nbsp;
     </div>
@@ -105,10 +104,13 @@
             </li>
         </ul>
     </div>
+<div align="center">
+    <h1>欢迎使用</h1>
+</div>
     <br><br>
 <div align="center">
     <input type="button" onclick="location.href='test.jsp'" value="准备考试" class="but">
-    <input type="button" onclick="location.href='score.jsp'" value="成绩查询" class="but">
+    <input type="button" onclick="location.href='StudentScoreServlet'" value="成绩查询" class="but">
 </div>
 </body>
 </html>

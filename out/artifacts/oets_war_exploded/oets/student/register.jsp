@@ -8,12 +8,13 @@
             background: deepskyblue;
         }
 
-        html {
-            background-color: #B5DEF2;
+        body {
+            background-image: url("../../image/background.jpg");
+            background-size: 100% 100%;
         }
 
         .wrapper {
-            margin: 120px 0 140px 760px;
+            margin: 5% 0 0 40%;
             width: 884px;
         }
 
@@ -102,6 +103,12 @@
         option:hover {
             background: #EBCCD1;
         }
+
+        .foot {
+            left: 37.5%;
+            bottom: 0;
+            position: absolute;
+        }
     </style>
 </head>
 <body>
@@ -137,5 +144,6 @@
         </div>
     </form>
 </div>
+<div class="foot" align="center">Copyright © 2018-2019 <font color="#8a2be2">OETS英语在线考试系统</font> All Rights Reserved<br><br></div>
 </body>
 </html>

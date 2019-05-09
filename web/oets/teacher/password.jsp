@@ -10,11 +10,12 @@
         }
 
         body {
-            background-color: #B5DEF2;
+            background-image: url("../../image/background.jpg");
+            background-size: 100% 100%;
         }
 
         .wrapper {
-            margin: 160px 0 140px 762px;
+            margin: 8% 0 0 40%;
             width: 884px;
         }
 

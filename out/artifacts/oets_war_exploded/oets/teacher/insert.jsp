@@ -10,17 +10,21 @@
         }
 
         body {
-            background-color: #B5DEF2;
+            background-image: url("../../image/background.jpg");
+            background-size: 100% 100%;
         }
 
         .wrapper {
-            margin: 50px 0 140px 760px;
+            margin: 5% 0 0 40%;
             width: 1120px;
         }
 
         .loginBox {
+            background-color: #F0F4F6;
+            border: 1px solid #BfD6E1;
+            border-radius: 5px;
             color: #444;
-            font: 14px;
+            font: 14px 'Microsoft YaHei', '微软雅黑';
             margin: 0;
             width: 388px
         }
@@ -36,7 +40,7 @@
         }
 
         .loginBox .loginBoxButtons {
-            border-top: 0px solid #FFF;
+            border-top: 0 solid #FFF;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             line-height: 28px;
@@ -52,7 +56,7 @@
             border: 1px solid #D2D9dC;
             border-radius: 2px;
             color: #444;
-            font: 12px;
+            font: 12px 'Microsoft YaHei', '微软雅黑';
             padding: 8px 14px;
             margin-bottom: 8px;
             width: 340px;
@@ -64,11 +68,11 @@
         }
 
         .loginBox .loginBtn {
-            background: lightskyblue;
+            background-image: -moz-linear-gradient(to bottom, blue, #85CFEE);
             border: 1px solid #98CCE7;
             border-radius: 20px;
             box-shadow: inset rgba(255, 255, 255, 0.6) 0 1px 1px, rgba(0, 0, 0, 0.1) 0 1px 1px;
-            color: black;
+            color: #444;
             cursor: pointer;
             float: right;
             font: bold 13px Arial;

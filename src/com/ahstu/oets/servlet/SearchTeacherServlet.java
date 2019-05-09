@@ -39,16 +39,17 @@ public class SearchTeacherServlet extends HttpServlet {
                 }
                 int pages = teacherList.size() / 10 + 1;
                 int page = Integer.parseInt(request.getParameter("page"));
-                System.out.println(page + " " + (teacherList.size() / 10 + 1));
-                if (page > (teacherList.size() / 10 + 1) || page < 1) {
-                    System.out.println(page + " " + teacherList.size() / 10 + 1);
+                if(page>=1 && page<=pages){
+                    System.out.println("page = "+page+"--- pages = "+pages);
+                }else {
+                    page = -1;
                     out.print("<html>" +
                             "<body>" +
                             "<script type=\'text/javascript\' language=\'javascript\'>\n" +
                             "           alert(\'该页面不存在！！！\');\n" +
                             "           window.document.location.href=\'TeacherListServlet\';\n" +
                             "</script>" +
-                            "</body>" + "</html>");
+                            "</body>"+ "</html>");
                 }
                 ArrayList<Teacher> list = new ArrayList<>();
                 for (int i = page * 10 - 10; i < page * 10 && i < teacherList.size(); i++) {

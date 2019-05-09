@@ -51,7 +51,7 @@ public class TestEndServlet extends HttpServlet {
                     "<body>" +
                     "<script type=\'text/javascript\' language=\'javascript\'>\n" +
                     "           alert(\'交卷成功!本次考试成绩为:" + score1 + "分\');\n" +
-                    "           window.document.location.href=\'../../student/ScoreServlet\';\n" +
+                    "           window.document.location.href=\'../../student/StudentScoreServlet\';\n" +
                     "</script>" +
                     "</body>");
         } catch (Exception e) {

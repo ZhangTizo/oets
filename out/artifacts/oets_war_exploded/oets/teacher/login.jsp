@@ -14,7 +14,7 @@
         }
 
         .wrapper {
-            margin: 280px 0 140px 1180px;
+            margin: 12% 0 0 40%;
             width: 884px;
         }
 
@@ -89,6 +89,11 @@
         .loginBox label[for="remember"] {
             font: 11px Arial;
         }
+        .foot {
+            left: 37.5%;
+            bottom: 0;
+            position: absolute;
+        }
     </style>
 </head>
 <body>
@@ -108,5 +113,6 @@
         </div>
     </form>
 </div>
+<div class="foot" align="center">Copyright © 2018-2019 <font color="#8a2be2">OETS英语在线考试系统</font> All Rights Reserved<br><br></div>
 </body>
 </html>
