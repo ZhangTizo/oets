@@ -22,6 +22,7 @@ public class SearchTeacherServlet extends HttpServlet {
         TeacherDaoImpl tdi = new TeacherDaoImpl();
         PrintWriter out = response.getWriter();
         if (request.getParameter("page") != null) {
+            int page;
             if (request.getParameter("page").equals("")) {
                 out.print("<html>" +
                         "<body>" +
@@ -38,9 +39,21 @@ public class SearchTeacherServlet extends HttpServlet {
                     e.printStackTrace();
                 }
                 int pages = teacherList.size() / 10 + 1;
-                int page = Integer.parseInt(request.getParameter("page"));
-                if(page>=1 && page<=pages){
-                    System.out.println("page = "+page+"--- pages = "+pages);
+                String regex = "^[0-9]+$";
+                if (request.getParameter("page").matches(regex)) {
+                    page = Integer.parseInt(request.getParameter("page"));
+                    if (page >= 1 && page <= pages) {
+                        System.out.println("page = " + page + "--- pages = " + pages);
+                    } else {
+                        page = -1;
+                        out.print("<html>" +
+                                "<body>" +
+                                "<script type=\'text/javascript\' language=\'javascript\'>\n" +
+                                "           alert(\'该页面不存在！！！\');\n" +
+                                "           window.document.location.href=\'StudentListServlet\';\n" +
+                                "</script>" +
+                                "</body>" + "</html>");
+                    }
                 }else {
                     page = -1;
                     out.print("<html>" +

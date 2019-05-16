@@ -54,32 +54,6 @@
         查询:<input size="16" type="text" name="search" placeholder="请输入要查询题目名称">&nbsp;&nbsp;
         <input type="submit" value="查询"><br><br>
     </div>
-    <%--<table align="center" border="1" cellpadding="15" class="gridtable">--%>
-        <%--<tr>--%>
-            <%--<th>题目名称</th>--%>
-            <%--<th>选项A</th>--%>
-            <%--<th>选项B</th>--%>
-            <%--<th>选项C</th>--%>
-            <%--<th>选项D</th>--%>
-            <%--<th>答案</th>--%>
-            <%--<th>操作</th>--%>
-        <%--</tr>--%>
-        <%--<c:forEach var="question" items="${questionList}">--%>
-            <%--<tr>--%>
-                <%--<td>${question.name}</td>--%>
-                <%--<td>${question.optionA}</td>--%>
-                <%--<td>${question.optionB}</td>--%>
-                <%--<td>${question.optionC}</td>--%>
-                <%--<td>${question.optionD}</td>--%>
-                <%--<td>${question.answer}</td>--%>
-                <%--<td>--%>
-                    <%--<a href="QuestionListServlet?method=update&post=${question.id}">修改</a>--%>
-                    <%--&nbsp;&nbsp;--%>
-                    <%--<a href="javascript:if(confirm('确实要删除吗?'))location='QuestionListServlet?method=delete&post=${question.id}'">删除</a>--%>
-                <%--</td>--%>
-            <%--</tr>--%>
-        <%--</c:forEach>--%>
-    <%--</table>--%>
     <table cellspacing="0" style="border:0;min-height: 400px;margin:0 auto;">
         <c:forEach var="question" items="${questionList}">
             <tr>

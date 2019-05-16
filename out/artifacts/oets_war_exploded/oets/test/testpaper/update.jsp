@@ -33,7 +33,6 @@
             结束时间:<input name="end" class="Wdate" type="text" value="<fmt:formatDate value="${testPaper.end}" pattern="yyyy-MM-dd HH:mm:ss"/>"
                         onclick="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:'#F{$dp.$D(\'start\')}||%y-%M-%d %H:%m:%s'})">
             <br>
-            <%--同时可以设置计数器，计算当前已选择的题目数量，最后对已经加入到试卷当中的题目默认勾选--%>
             <table align="center" border="1" cellpadding="15">
                 <tr>
                     <th>选择</th>
@@ -60,11 +59,7 @@
                     </tr>
                 </c:forEach>
             </table>
-            <%--<%--%>
-                <%--String[] select = request.getParameterValues("check");--%>
-                <%--int length = select.length;--%>
-            <%--%>--%>
-            <%--<font color="red">注意：只能选择10道题，不能多也不能少！<font color="#1e90ff">当前已选<%=length%>道题</font></font>--%>
+            <font color="red">注意：只能选择10道题，不能多也不能少！<font color="#1e90ff">当前已选？道题</font></font>
             <div class="loginBoxButtons">
                 <input type="submit" value="提&nbsp;&nbsp;交" class="loginBtn">
                 <a href="TestPaperListServlet" style="color: blue;font-weight: bold;font-size: 15px;">返&nbsp;&nbsp;回</a>
