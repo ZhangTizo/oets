@@ -2,6 +2,7 @@ package com.ahstu.oets.entity;
 
 public class Question {
     private int id;
+    private int type;
     private String name;
     private String optionA;
     private String optionB;
@@ -15,6 +16,14 @@ public class Question {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
     }
 
     public String getName() {

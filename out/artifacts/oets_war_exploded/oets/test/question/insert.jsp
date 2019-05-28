@@ -4,8 +4,7 @@
 <head>
     <title>Title</title>
     <style>
-        h1
-        {
+        h1 {
             background: deepskyblue;
         }
 
@@ -82,6 +81,29 @@
         .loginBox .loginBtn:HOVER {
             background-image: -moz-linear-gradient(to top, blue, #85CFEE);
         }
+
+        select{
+            width: 340px;
+            height: 35px;
+            font-size: 15px;
+            color: black;
+            border-radius: 5px;
+        }
+
+        select:focus{
+            border: 2px #ddd solid;
+            box-shadow: 0 0 15px 1px #DDDDDD;
+        }
+
+        option{
+            color: black;
+            background: #A6E1EC;
+            line-height: 20px;
+        }
+
+        option:hover{
+            background: #EBCCD1;
+        }
     </style>
 </head>
 <body>
@@ -93,8 +115,16 @@
     <form action="InsertQuestionServlet" method="post">
         <div class="loginBox">
             <div class="loginBoxCenter">
+                <p>题目类型:</p>
+                <p>
+                    <select name="type">
+                        <option value="1">单选题</option>
+                        <option value="2">多选题</option>
+                        <option value="3">阅读理解</option>
+                    </select>
+                </p>
                 <p>题目名称:</p>
-                <p><input type="text" name="name" class="loginInput"  required="required" autofocus="autofocus" placeholder="请输入题目"/></p>
+                <p><input type="text" name="name" class="loginInput" required="required" autofocus="autofocus" placeholder="请输入题目"/></p>
                 <p>选项A:</p>
                 <p><input type="text" name="optionA" class="loginInput" placeholder="选项A"/></p>
                 <p>选项B:</p>

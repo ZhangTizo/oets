@@ -28,7 +28,7 @@
             padding:8px;
             border-style:solid;
             border-color:#666666;
-            background-color:#dedede;
+            background-color:deepskyblue;
         }
         table.gridtable td{
             text-align:center;

@@ -12,7 +12,7 @@ public class QuestionDaoImpl implements QuestionDao {
 
     @Override
     public int insert(Question question) throws Exception {   //添加
-        String sql = "insert into question(name,optionA,optionB,optionC,optionD,answer) values(?,?,?,?,?,?)";
+        String sql = "insert into question(name,optionA,optionB,optionC,optionD,answer,type) values(?,?,?,?,?,?,?)";
         ArrayList<Object> list = new ArrayList<>();
         list.add(question.getName());
         list.add(question.getOptionA());
@@ -20,12 +20,13 @@ public class QuestionDaoImpl implements QuestionDao {
         list.add(question.getOptionC());
         list.add(question.getOptionD());
         list.add(question.getAnswer());
+        list.add(question.getType());
         return DbUtil.executeUpdate(sql, list);
     }
 
     @Override
     public int update(Question question) throws Exception { //修改
-        String sql = "update question set name = ?, optionA = ?, optionB = ?, optionC = ?, optionD = ?, answer = ? where id = ?";
+        String sql = "update question set name = ?, optionA = ?, optionB = ?, optionC = ?, optionD = ?, answer = ?, type = ? where id = ?";
         ArrayList<Object> list = new ArrayList<>();
         list.add(question.getName());
         list.add(question.getOptionA());
@@ -33,6 +34,7 @@ public class QuestionDaoImpl implements QuestionDao {
         list.add(question.getOptionC());
         list.add(question.getOptionD());
         list.add(question.getAnswer());
+        list.add(question.getType());
         list.add(question.getId());
         return DbUtil.executeUpdate(sql, list);
     }

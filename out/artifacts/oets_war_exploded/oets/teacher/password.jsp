@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>修改题目信息</title>
+    <title>修改密码</title>
     <style>
         h1
         {
@@ -10,13 +10,13 @@
         }
 
         body {
-            background-image: url("../../../image/background.jpg");
+            background-image: url("../../image/background.jpg");
             background-size: 100% 100%;
         }
 
         .wrapper {
-            margin: 50px 0 140px 760px;
-            width: 1120px;
+            margin: 8% 0 0 40%;
+            width: 884px;
         }
 
         .loginBox {
@@ -83,54 +83,34 @@
             background-image: -moz-linear-gradient(to top, blue, #85CFEE);
         }
 
-        select{
-            width: 340px;
-            height: 35px;
-            font-size: 15px;
-            color: black;
-            border-radius: 5px;
+        .loginBox input {
+            vertical-align: middle;
         }
 
-        select:focus{
-            border: 2px #ddd solid;
-            box-shadow: 0 0 15px 1px #DDDDDD;
+        .loginBox label[for="remember"] {
+            font: 11px Arial;
         }
+
     </style>
 </head>
 <body>
-<br><br>
-<div align="center">
-    <h1>请修改题目信息</h1>
-</div>
-<div class="wrapper">
-    <form action="UpdateQuestionServlet" method="post">
+<div class="wrapper" >
+    <form action="TeacherPasswordServlet" method="post">
         <div class="loginBox">
             <div class="loginBoxCenter">
-                <p><input type="text" name="id" class="loginInput"  value="${question.id}" hidden="hidden"/></p>
-                <p>题目类型:${question.type}</p>
-                <p>题目名称:</p>
-                <p><input type="text" name="name" class="loginInput" value="${question.name}"/></p>
-                <p>选项A:</p>
-                <p><input type="text" name="optionA" class="loginInput" value="${question.optionA}"/></p>
-                <p>选项B:</p>
-                <p><input type="text" name="optionB" class="loginInput" value="${question.optionB}"/></p>
-                <p>选项C:</p>
-                <p><input type="text" name="optionC" class="loginInput" value="${question.optionC}"/></p>
-                <p>选项D:</p>
-                <p><input type="text" name="optionD" class="loginInput" value="${question.optionD}"/></p>
-                <p>正确答案:</p>
-                <p>
-                    <select name="answer">
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                        <option value="D">D</option>
-                    </select>
-                </p>
+                <p style="font-weight: bold">当前教师：<c:out value="${teano}"></c:out></p>
+                <p>原密码:</p>
+                <p><input type="password" name="password" class="loginInput" autofocus="autofocus" required="required" placeholder="请输入原密码"/></p>
+                <p>新密码:</p>
+                <p><input type="password" name="password1" class="loginInput" required="required" placeholder="请输入新密码"/></p>
+                <p>确认密码:</p>
+                <p><input type="password" name="password2" class="loginInput" required="required" placeholder="请再次输入新密码"/></p>
             </div>
             <div class="loginBoxButtons">
-                <input type="submit" value="提&nbsp;&nbsp;交" class="loginBtn">
-                <a href="QuestionListServlet" style="color: blue;font-weight: bold;font-size: 15px;">返&nbsp;&nbsp;回</a>
+                <button class="loginBtn" type="submit">修&nbsp;&nbsp;改</button>
+                <button class="loginBtn" type="reset">重&nbsp;&nbsp;置</button>
+                <br>
+                <a href="manage.jsp" style="color: blue;font-weight: bold;font-size: 15px;">返&nbsp;&nbsp;回</a>
             </div>
         </div>
     </form>

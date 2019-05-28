@@ -19,6 +19,7 @@ public class InsertQuestionServlet extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         PrintWriter out = response.getWriter();
         QuestionDaoImpl qdi = new QuestionDaoImpl();
+        int type = Integer.parseInt(request.getParameter("type"));
         String name = request.getParameter("name");
         String optionA = request.getParameter("optionA");
         String optionB = request.getParameter("optionB");
@@ -37,6 +38,7 @@ public class InsertQuestionServlet extends HttpServlet {
                             "</body>");
                 } else {
                     Question question = new Question();
+                    question.setType(type);
                     question.setName(name);
                     question.setOptionA(optionA);
                     question.setOptionB(optionB);

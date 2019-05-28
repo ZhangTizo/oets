@@ -107,7 +107,8 @@
         <div class="loginBox">
             <div class="loginBoxCenter">
                 <p><input type="text" name="id" class="loginInput"  value="${question.id}" hidden="hidden"/></p>
-                <p>题目:</p>
+                <p>题目类型:${question.type}</p>
+                <p>题目名称:</p>
                 <p><input type="text" name="name" class="loginInput" value="${question.name}"/></p>
                 <p>选项A:</p>
                 <p><input type="text" name="optionA" class="loginInput" value="${question.optionA}"/></p>

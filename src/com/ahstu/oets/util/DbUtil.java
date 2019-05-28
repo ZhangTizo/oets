@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class DbUtil {
     private static String drive          = "com.mysql.jdbc.Driver";
-    private static String url            = "jdbc:mysql://localhost:3306/oets?characterEncoding=utf8&autoReconnect=true&useSSL=false&serverTimezone=UTC";
+    private static String url            = "jdbc:mysql://localhost:3306/oets?characterEncoding=utf8&autoReconnect=true&useSSL=false";
     private static String user           = "root";
     private static String password       = "root";
 
@@ -25,7 +25,7 @@ public class DbUtil {
     //建立连接
     public static Connection getConnection() throws Exception{
         Class.forName(drive);   //注册JDBC驱动程序
-        return DriverManager.getConnection(url,user,password);
+        return DriverManager.   getConnection(url,user,password);
     }
 
     //释放资源
