@@ -42,13 +42,16 @@ public class TestServlet extends HttpServlet {
                 request.setAttribute("lastTime", lastTime);
                 request.setAttribute("testPaper", testPaper);
                 int size = questionList.size();
-                request.setAttribute("size",size);
+                request.setAttribute("size", size);
+                request.setAttribute("pid", pid);
+                request.setAttribute("singleQuestionList", tpdi.getSingleQuestion(pid));
+                request.setAttribute("multipleQuestionList", tpdi.getMultipleQuestion(pid));
+                request.setAttribute("readingQuestionList", tpdi.getReadingQuestion(pid));
+                request.setAttribute("readingName", tpdi.getReadingName(pid));
+                request.getRequestDispatcher("../test/testpaper/test.jsp").forward(request, response);
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            request.setAttribute("pid",pid);
-            request.setAttribute("questionList", questionList);
-            request.getRequestDispatcher("../test/testpaper/test.jsp").forward(request, response);
         }
     }
 

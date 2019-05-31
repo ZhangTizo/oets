@@ -1,7 +1,7 @@
 package com.ahstu.oets.servlet;
 
 import com.ahstu.oets.dao.impl.ScoreDaoImpl;
-import com.ahstu.oets.entity.Score;
+import com.ahstu.oets.entity.ScoreQuery;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,7 +19,7 @@ public class ScoreServlet extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         ScoreDaoImpl sdi = new ScoreDaoImpl();
         try {
-            ArrayList<Score> scoreList = sdi.getScore();
+            ArrayList<ScoreQuery> scoreList = sdi.getScore();
             request.setAttribute("scoreList",scoreList);
         } catch (Exception e) {
             e.printStackTrace();

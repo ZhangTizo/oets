@@ -81,48 +81,18 @@
         .loginBox .loginBtn:HOVER {
             background-image: -moz-linear-gradient(to top, blue, #85CFEE);
         }
-
-        select{
-            width: 340px;
-            height: 35px;
-            font-size: 15px;
-            color: black;
-            border-radius: 5px;
-        }
-
-        select:focus{
-            border: 2px #ddd solid;
-            box-shadow: 0 0 15px 1px #DDDDDD;
-        }
-
-        option{
-            color: black;
-            background: #A6E1EC;
-            line-height: 20px;
-        }
-
-        option:hover{
-            background: #EBCCD1;
-        }
     </style>
 </head>
 <body>
 <br><br>
 <div align="center">
-    <h1>新增题目</h1>
+    <h1>添加阅读理解题目</h1>
 </div>
 <div class="wrapper">
-    <form action="InsertQuestionServlet" method="post">
+    <form action="InsertReadingQuestionServlet" method="post" id="myForm">
         <div class="loginBox">
             <div class="loginBoxCenter">
-                <p>题目类型:</p>
-                <p>
-                    <select name="type">
-                        <option value="1">单选题</option>
-                        <option value="2">多选题</option>
-                        <option onclick="location.href='reading.jsp'">阅读理解</option>
-                    </select>
-                </p>
+                <input type="text" name="rid" value="${rid}" hidden="hidden">
                 <p>题目名称:</p>
                 <p><input type="text" name="name" class="loginInput" required="required" autofocus="autofocus" placeholder="请输入题目"/></p>
                 <p>选项A:</p>
@@ -137,8 +107,8 @@
                 <p><input type="text" name="answer" class="loginInput" required="required" placeholder="正确答案"></p>
             </div>
             <div class="loginBoxButtons">
-                <input type="submit" value="保&nbsp;&nbsp;存" class="loginBtn">
-                <a href="QuestionListServlet" style="color: blue;font-weight: bold;font-size: 15px;">返&nbsp;&nbsp;回</a>
+                <a href="QuestionListServlet">结束</a>
+                <input type="submit" value="继续" class="loginBtn">
             </div>
         </div>
     </form>

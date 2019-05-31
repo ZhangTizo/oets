@@ -42,6 +42,8 @@ public class QuestionListServlet extends HttpServlet {
             if (method.equals("update")) {
                 try {
                     request.setAttribute("question", qdi.getOne(Integer.valueOf(request.getParameter("post"))));
+                    request.setAttribute("readingName",qdi.getReadingName(Integer.valueOf(request.getParameter("post"))));
+                    request.setAttribute("type",qdi.getOne(Integer.valueOf(request.getParameter("post"))).getType());
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

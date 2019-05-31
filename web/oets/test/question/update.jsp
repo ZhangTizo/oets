@@ -1,3 +1,4 @@
+<%@ page import="com.ahstu.oets.entity.Question" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -106,8 +107,12 @@
     <form action="UpdateQuestionServlet" method="post">
         <div class="loginBox">
             <div class="loginBoxCenter">
-                <p><input type="text" name="id" class="loginInput"  value="${question.id}" hidden="hidden"/></p>
-                <p>题目类型:${question.type}</p>
+                <%
+                    if ((int)request.getAttribute("type") == 1) {
+                %>
+                <input type="text" name="id" class="loginInput"  value="${question.id}" hidden="hidden"/>
+                <input type="text" name="type" class="loginInput"  value="${question.type}" hidden="hidden">
+                <p>题目类型:单选题</p>
                 <p>题目名称:</p>
                 <p><input type="text" name="name" class="loginInput" value="${question.name}"/></p>
                 <p>选项A:</p>
@@ -121,12 +126,59 @@
                 <p>正确答案:</p>
                 <p>
                     <select name="answer">
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                        <option value="D">D</option>
+                        <option value="A" ${question.answer eq "A" ? "selected" : ""}>A</option>
+                        <option value="B" ${question.answer eq "B" ? "selected" : ""}>B</option>
+                        <option value="C" ${question.answer eq "C" ? "selected" : ""}>C</option>
+                        <option value="D" ${question.answer eq "D" ? "selected" : ""}>D</option>
                     </select>
                 </p>
+                <%
+                    }else if ((int)request.getAttribute("type") == 2) {
+                %>
+                <input type="text" name="id" class="loginInput"  value="${question.id}" hidden="hidden"/>
+                <input type="text" name="type" class="loginInput"  value="${question.type}" hidden="hidden">
+                <p>题目类型:多选题</p>
+                <p>题目名称:</p>
+                <p><input type="text" name="name" class="loginInput" value="${question.name}"/></p>
+                <p>选项A:</p>
+                <p><input type="text" name="optionA" class="loginInput" value="${question.optionA}"/></p>
+                <p>选项B:</p>
+                <p><input type="text" name="optionB" class="loginInput" value="${question.optionB}"/></p>
+                <p>选项C:</p>
+                <p><input type="text" name="optionC" class="loginInput" value="${question.optionC}"/></p>
+                <p>选项D:</p>
+                <p><input type="text" name="optionD" class="loginInput" value="${question.optionD}"/></p>
+                <p>正确答案:</p>
+                <p><input type="text" name="answer" class="loginInput" value="${question.answer}"></p>
+                <%
+                    }else {
+                %>
+                <input type="text" name="id" class="loginInput"  value="${question.id}" hidden="hidden"/>
+                <input type="text" name="type" class="loginInput"  value="${question.type}" hidden="hidden">
+                <p>题目类型:阅读理解</p>
+                <p>${readingName}</p>
+                <p>题目名称:</p>
+                <p><input type="text" name="name" class="loginInput" value="${question.name}"/></p>
+                <p>选项A:</p>
+                <p><input type="text" name="optionA" class="loginInput" value="${question.optionA}"/></p>
+                <p>选项B:</p>
+                <p><input type="text" name="optionB" class="loginInput" value="${question.optionB}"/></p>
+                <p>选项C:</p>
+                <p><input type="text" name="optionC" class="loginInput" value="${question.optionC}"/></p>
+                <p>选项D:</p>
+                <p><input type="text" name="optionD" class="loginInput" value="${question.optionD}"/></p>
+                <p>正确答案:</p>
+                <p>
+                    <select name="answer">
+                        <option value="A" ${question.answer eq "A" ? "selected" : ""}>A</option>
+                        <option value="B" ${question.answer eq "B" ? "selected" : ""}>B</option>
+                        <option value="C" ${question.answer eq "C" ? "selected" : ""}>C</option>
+                        <option value="D" ${question.answer eq "D" ? "selected" : ""}>D</option>
+                    </select>
+                </p>
+                <%
+                    }
+                %>
             </div>
             <div class="loginBoxButtons">
                 <input type="submit" value="提&nbsp;&nbsp;交" class="loginBtn">

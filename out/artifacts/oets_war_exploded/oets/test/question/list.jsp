@@ -5,41 +5,13 @@
     <title>题库列表</title>
     <style>
         body {
-            background-image: url("../../../image/background.jpg");
+            background-image: url("../../../image/background1.jpg");
             background-size: 100% 100%;
         }
 
         h1 {
             background-color: deepskyblue;
         }
-
-        /*table.gridtable{*/
-            /*font-family:verdana,arial,sans-serif;*/
-            /*font-size:18px;*/
-            /*color:#333333;*/
-            /*border-width:1px;*/
-            /*border-color:#666666;*/
-            /*border-collapse:collapse;*/
-        /*}*/
-        /*table.gridtable th{*/
-            /*text-align:center;*/
-            /*width: 150px;*/
-            /*border-width:1px;*/
-            /*padding:8px;*/
-            /*border-style:solid;*/
-            /*border-color:#666666;*/
-            /*background-color:#dedede;*/
-        /*}*/
-        /*table.gridtable td{*/
-            /*text-align:center;*/
-            /*width: 150px;*/
-            /*border-width:1px;*/
-            /*padding:8px;*/
-            /*border-style:solid;*/
-            /*border-color:#666666;*/
-            /*background-color:#ffffff;*/
-        /*}*/
-
     </style>
 </head>
 <body>
@@ -59,7 +31,7 @@
             <tr>
                 <td style="width:1000px;min-height:100px;border:1px solid black;border-radius:5px;">
                     <div class="question_name" style="width:900px;min-height:20px;margin:0 auto;padding:10px;">
-                        question:&nbsp;&nbsp;<span>${question.name}</span>
+                        ${question.type eq 1 ? "单选题:" : (question.type eq 2 ? "多选题:" : "阅读理解题")}&nbsp;&nbsp;<span>${question.name}</span>
                     </div>
                     <div class="question_bottom" style="width:900px;min-height:80px;margin:0 auto;">
                         <div class="question_option" style="width:800px;min-height:80px;float:left;padding:10px;">

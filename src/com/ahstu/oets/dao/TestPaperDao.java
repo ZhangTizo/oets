@@ -12,6 +12,11 @@ public interface TestPaperDao {
     public TestPaper getOne(String name) throws Exception;
     public ArrayList<TestPaper> getList() throws Exception;
     public int setQuestion(int pid, int qid) throws Exception;
+    public int setReading(int pid, int rid) throws Exception;
+    public String getReadingName(int pid) throws Exception;
+    public ArrayList<Question> getSingleQuestion(int pid) throws Exception;
+    public ArrayList<Question> getMultipleQuestion(int pid) throws Exception;
+    public ArrayList<Question> getReadingQuestion(int pid) throws Exception;
     public ArrayList<Question> getQuestion(int pid) throws Exception;
     public int deleteQuestion(int pid) throws Exception;
 }

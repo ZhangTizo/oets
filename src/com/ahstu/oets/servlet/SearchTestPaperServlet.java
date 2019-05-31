@@ -21,6 +21,7 @@ public class SearchTestPaperServlet extends HttpServlet {
         String search = request.getParameter("search");
         TestPaperDaoImpl tpdi = new TestPaperDaoImpl();
         PrintWriter out = response.getWriter();
+
         if (request.getParameter("page")!=null){
             int page;
             if (request.getParameter("page").equals("")){

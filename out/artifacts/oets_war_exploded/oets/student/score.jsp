@@ -23,20 +23,7 @@
     </tr>
     <c:forEach var="score" items="${scoreList}">
         <tr>
-            <input type="text" value="${score.pid}" name="pid" hidden="hidden">
-            <%
-                TestPaperDaoImpl tpdi = new TestPaperDaoImpl();
-                try {
-                    String name = tpdi.getOne(Integer.parseInt(request.getParameter("pid"))).getName();
-                    System.out.println("name "+name);
-            %>
-            <td><%=name%></td>
-            <%
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            %>
-                <td>${score.pid}</td>
+            <td>${score.testPaperName}</td>
             <td>${score.score}</td>
             <td><fmt:formatDate value="${score.time}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
         </tr>

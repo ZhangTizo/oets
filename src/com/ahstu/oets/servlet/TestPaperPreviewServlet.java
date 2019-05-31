@@ -25,7 +25,10 @@ public class TestPaperPreviewServlet extends HttpServlet {
         ArrayList<Question> questionList = null;
         try {
             questionList = tpdi.getQuestion(pid);
-            request.setAttribute("questionList",questionList);
+            request.setAttribute("singleQuestionList", tpdi.getSingleQuestion(pid));
+            request.setAttribute("multipleQuestionList", tpdi.getMultipleQuestion(pid));
+            request.setAttribute("readingQuestionList", tpdi.getReadingQuestion(pid));
+            request.setAttribute("readingName", tpdi.getReadingName(pid));
             request.setAttribute("testPaper", tpdi.getOne(Integer.valueOf(request.getParameter("post"))));
             request.getRequestDispatcher("preview.jsp").forward(request, response);
         } catch (Exception e) {

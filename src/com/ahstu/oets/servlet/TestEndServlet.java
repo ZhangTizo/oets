@@ -39,7 +39,7 @@ public class TestEndServlet extends HttpServlet {
                 String answer = request.getParameter("" + qid);
                 if (qdi.isTrue(qid, answer)) {
                     //如果答案正确，则传给servlet记录，并在答题结束之后计算成绩传给score表(解决方案：只能选择10道题，每题10分，直接计算)
-                    score1 += 10;
+                    score1 += 5;
                 }
             }
             score.setPid(pid);

@@ -94,7 +94,7 @@ public class TestPaperDaoImpl implements TestPaperDao {
         String sql = "select * from testpaper where name like ?";
         ArrayList<Object> list = new ArrayList<>();
         list.add("%"+search+"%");
-        for (Map<String,Object> m:DbUtil.executeQuery(sql,null)){
+        for (Map<String,Object> m:DbUtil.executeQuery(sql,list)){
             TestPaper testPaper = new TestPaper();
             testPaper.setId((int)m.get("id"));
             testPaper.setName((String)m.get("name"));
@@ -107,11 +107,95 @@ public class TestPaperDaoImpl implements TestPaperDao {
 
     @Override
     public int setQuestion(int pid, int qid) throws Exception {
-        String sql = "insert into connection(pid,qid) value(?,?)";
+        String sql = "insert into connection(pid,qid) values(?,?)";
         ArrayList<Object> list = new ArrayList<>();
         list.add(pid);
         list.add(qid);
         return DbUtil.executeUpdate(sql,list);
+    }
+
+    @Override
+    public int setReading(int pid, int rid) throws Exception {
+        String sql = "insert into treading(pid,rid) values(?,?)";
+        ArrayList<Object> list = new ArrayList<>();
+        list.add(pid);
+        list.add(rid);
+        return DbUtil.executeUpdate(sql,list);
+    }
+
+    @Override
+    public String getReadingName(int pid) throws Exception {
+        String sql = "select * from reading inner join treading on reading.id = treading.rid where pid = ?";
+        ArrayList<Object> list = new ArrayList<>();
+        list.add(pid);
+        String readingName = "";
+        for (Map<String, Object> m : DbUtil.executeQuery(sql, list)) {
+            readingName = (String) m.get("name");
+        }
+        return readingName;
+    }
+
+    @Override
+    public ArrayList<Question> getSingleQuestion(int pid) throws Exception {
+        String sql = "select * from question inner join connection on question.id = connection.qid where pid = ? and type = 1";
+        ArrayList<Object> list = new ArrayList<>();
+        list.add(pid);
+        ArrayList<Question> questionList = new ArrayList<>();
+        for (Map<String, Object> m : DbUtil.executeQuery(sql, list)) {
+            Question question = new Question();
+            question.setId((int) m.get("id"));
+            question.setName((String) m.get("name"));
+            question.setOptionA((String) m.get("optionA"));
+            question.setOptionB((String) m.get("optionB"));
+            question.setOptionC((String) m.get("optionC"));
+            question.setOptionD((String) m.get("optionD"));
+            question.setAnswer((String) m.get("answer"));
+            question.setType((int)m.get("type"));
+            questionList.add(question);
+        }
+        return questionList;
+    }
+
+    @Override
+    public ArrayList<Question> getMultipleQuestion(int pid) throws Exception {
+        String sql = "select * from question inner join connection on question.id = connection.qid where pid = ? and type = 2";
+        ArrayList<Object> list = new ArrayList<>();
+        list.add(pid);
+        ArrayList<Question> questionList = new ArrayList<>();
+        for (Map<String, Object> m : DbUtil.executeQuery(sql, list)) {
+            Question question = new Question();
+            question.setId((int) m.get("id"));
+            question.setName((String) m.get("name"));
+            question.setOptionA((String) m.get("optionA"));
+            question.setOptionB((String) m.get("optionB"));
+            question.setOptionC((String) m.get("optionC"));
+            question.setOptionD((String) m.get("optionD"));
+            question.setAnswer((String) m.get("answer"));
+            question.setType((int)m.get("type"));
+            questionList.add(question);
+        }
+        return questionList;
+    }
+
+    @Override
+    public ArrayList<Question> getReadingQuestion(int pid) throws Exception {
+        String sql = "select * from question inner join rquestion on question.id = rquestion.qid inner join treading on treading.rid = rquestion.rid where pid = ? and type = 3";
+        ArrayList<Object> list = new ArrayList<>();
+        list.add(pid);
+        ArrayList<Question> questionList = new ArrayList<>();
+        for (Map<String, Object> m : DbUtil.executeQuery(sql, list)) {
+            Question question = new Question();
+            question.setId((int) m.get("id"));
+            question.setName((String) m.get("name"));
+            question.setOptionA((String) m.get("optionA"));
+            question.setOptionB((String) m.get("optionB"));
+            question.setOptionC((String) m.get("optionC"));
+            question.setOptionD((String) m.get("optionD"));
+            question.setAnswer((String) m.get("answer"));
+            question.setType((int)m.get("type"));
+            questionList.add(question);
+        }
+        return questionList;
     }
 
     @Override
@@ -130,8 +214,10 @@ public class TestPaperDaoImpl implements TestPaperDao {
     @Override
     public int deleteQuestion(int pid) throws Exception {
         String sql = "delete from connection where pid = ?";
+        String sql1= "delete from treading where pid = ?";
         ArrayList<Object> list = new ArrayList<>();
         list.add(pid);
+        DbUtil.executeUpdate(sql1,list);
         return DbUtil.executeUpdate(sql,list);
     }
 }

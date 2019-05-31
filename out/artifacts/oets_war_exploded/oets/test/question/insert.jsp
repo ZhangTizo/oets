@@ -120,7 +120,7 @@
                     <select name="type">
                         <option value="1">单选题</option>
                         <option value="2">多选题</option>
-                        <option value="3">阅读理解</option>
+                        <option onclick="location.href='reading.jsp'">阅读理解</option>
                     </select>
                 </p>
                 <p>题目名称:</p>

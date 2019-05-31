@@ -1,4 +1,3 @@
-<%@ page import="com.ahstu.oets.dao.impl.TestPaperDaoImpl" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt_rt" %>
@@ -21,12 +20,12 @@
         <th>成绩</th>
         <th>考试时间</th>
     </tr>
-    <c:forEach var="score" items="${scoreList}">
+    <c:forEach var="scoreQuery" items="${scoreList}">
         <tr>
-            <td>${score.pid}</td>
-            <td>${score.stuno}</td>
-            <td>${score.score}</td>
-            <td><fmt:formatDate value="${score.time}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
+            <td>${scoreQuery.testPaperName}</td>
+            <td>${scoreQuery.stuName}</td>
+            <td>${scoreQuery.score}</td>
+            <td><fmt:formatDate value="${scoreQuery.time}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
         </tr>
     </c:forEach>
 </table>

@@ -49,20 +49,24 @@ public class TestPaperListServlet extends HttpServlet {
         } else {
             if (method.equals("update")) {
                 try {
-                    request.setAttribute("testPaper", tpdi.getOne(Integer.valueOf(request.getParameter("post"))));
                     session.setAttribute("testPaper", tpdi.getOne(Integer.valueOf(request.getParameter("post"))));
                     request.setAttribute("questions", tpdi.getQuestion(Integer.valueOf(request.getParameter("post"))));
+                    request.setAttribute("singleQuestion",qdi.getSingleQuestion());
+                    request.setAttribute("multipleQuestion",qdi.getMultipleQuestion());
+                    request.setAttribute("testPaperReading",qdi.TestPaperReading());
+                    request.setAttribute("reading",qdi.getReading());
+                    request.getRequestDispatcher("update.jsp").forward(request, response);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-                request.setAttribute("questionList",questionList);
-                request.getRequestDispatcher("update.jsp").forward(request, response);
             } else if (method.equals("insert")) {
                 response.sendRedirect("insert.jsp");
             } else if (method.equals("delete")) {
                 int id = Integer.valueOf(request.getParameter("post"));
                 try {
-                    System.out.println(tpdi.delete(id));
+                    //删除试卷的同时需要级联删除试卷和试题关系的connection联系表中的相关内容
+                    tpdi.delete(id);
+                    tpdi.deleteQuestion(id);
                 } catch (Exception e) {
                 }
                 response.sendRedirect("TestPaperListServlet");
