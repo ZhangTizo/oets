@@ -25,7 +25,7 @@ public class DbUtil {
     //建立连接
     public static Connection getConnection() throws Exception{
         Class.forName(drive);   //注册JDBC驱动程序
-        return DriverManager.   getConnection(url,user,password);
+        return DriverManager.getConnection(url,user,password);
     }
 
     //释放资源

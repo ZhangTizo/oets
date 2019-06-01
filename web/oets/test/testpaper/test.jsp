@@ -54,9 +54,9 @@
         <c:forEach var="question" items="${multipleQuestionList}" varStatus="status">
             <strong>${status.index + 11}.${question.name}<br></strong>
             <label><input type="checkbox" name="${question.id}" value="A" />A.${question.optionA}</label><br>
-            <label><input type="checkbox" name="${question.id}" value="B" />A.${question.optionB}</label><br>
-            <label><input type="checkbox" name="${question.id}" value="C" />A.${question.optionC}</label><br>
-            <label><input type="checkbox" name="${question.id}" value="D" />A.${question.optionD}</label><br><br><br>
+            <label><input type="checkbox" name="${question.id}" value="B" />B.${question.optionB}</label><br>
+            <label><input type="checkbox" name="${question.id}" value="C" />C.${question.optionC}</label><br>
+            <label><input type="checkbox" name="${question.id}" value="D" />D.${question.optionD}</label><br><br><br>
         </c:forEach>
         <strong style="font-size: 20px">三.阅读理解（每题5分，共25分）</strong><br>
         <p>${readingName}</p>

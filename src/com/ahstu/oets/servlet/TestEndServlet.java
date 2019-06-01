@@ -2,6 +2,7 @@ package com.ahstu.oets.servlet;
 
 import com.ahstu.oets.dao.impl.QuestionDaoImpl;
 import com.ahstu.oets.dao.impl.ScoreDaoImpl;
+import com.ahstu.oets.dao.impl.TestPaperDaoImpl;
 import com.ahstu.oets.entity.Question;
 import com.ahstu.oets.entity.Score;
 
@@ -23,22 +24,44 @@ public class TestEndServlet extends HttpServlet {
         response.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
         QuestionDaoImpl qdi = new QuestionDaoImpl();
+        TestPaperDaoImpl tpdi = new TestPaperDaoImpl();
         ScoreDaoImpl sdi = new ScoreDaoImpl();
         PrintWriter out = response.getWriter();
-        ArrayList<Question> questionList = null;
         HttpSession session = request.getSession();
+        int score1 = 0;
         Score score = new Score();
+        Date date = new Date();
+        StringBuffer stringBuffer = new StringBuffer();
         String stuno = (String) session.getAttribute("stuno");
         int pid = Integer.parseInt(request.getParameter("pid"));
-        int score1 = 0;
-        Date date = new Date();
         try {
-            questionList = qdi.getList();
-            for (Question question : questionList) {
+            ArrayList<Question> singleQuestionList = tpdi.getSingleQuestion(pid);
+            ArrayList<Question> multipleQuestionList = tpdi.getMultipleQuestion(pid);
+            ArrayList<Question> readingQuestionList = tpdi.getReadingQuestion(pid);
+            //获取选中选项的内容答案，和数据库进行对比，如果答案正确则按照对于的题目类型进行计算成绩
+            for (Question question : singleQuestionList) {    //单选题计算得分
+                int qid = question.getId();
+                String answer = request.getParameter("" + qid);
+                if (qdi.isTrue(qid, answer)) {  //如果答案正确，则把题目对应的分数添加到score1中
+                    score1 += 5;
+                }
+            }
+            for (Question question : multipleQuestionList) {    //多选题计算得分
+                int qid = question.getId();
+                String[] answer = request.getParameterValues("" + qid);
+                for (String i: answer) {
+                    stringBuffer.append(i);
+                }
+                System.out.println(stringBuffer.toString());
+                if (qdi.isTrue(qid,stringBuffer.toString())) {
+                    score1 += 5;
+                }
+                stringBuffer.setLength(0);
+            }
+            for (Question question : readingQuestionList) {    //阅读理解题计算得分
                 int qid = question.getId();
                 String answer = request.getParameter("" + qid);
                 if (qdi.isTrue(qid, answer)) {
-                    //如果答案正确，则传给servlet记录，并在答题结束之后计算成绩传给score表(解决方案：只能选择10道题，每题10分，直接计算)
                     score1 += 5;
                 }
             }
