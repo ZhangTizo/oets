@@ -9,7 +9,7 @@
         }
 
         body {
-            background-image: url("../../../image/background.jpg");
+            background-image: url("../../../image/background1.jpg");
             background-size: 100% 100%;
         }
     </style>
