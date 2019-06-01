@@ -10,10 +10,16 @@
         {
             background: deepskyblue;
         }
+
+        body
+        {
+            background-image: url("../../../image/background1.jpg");
+            background-size: 100% 100%;
+        }
     </style>
 </head>
 <body>
-<br><br>
+<br>
 <div align="center">
     <h1>请修改试卷信息</h1>
 </div>
@@ -99,8 +105,8 @@
                     </tr>
                 </c:forEach>
             </table>
-            <div class="loginBoxButtons">
-                <input type="submit" value="提&nbsp;&nbsp;交" class="loginBtn">
+            <div class="loginBoxButtons"><br><br>
+                <input type="submit" value="提&nbsp;&nbsp;交" class="loginBtn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="TestPaperListServlet" style="color: blue;font-weight: bold;font-size: 15px;">返&nbsp;&nbsp;回</a>
             </div>
         </div>

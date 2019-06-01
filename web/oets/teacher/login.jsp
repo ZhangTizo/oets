@@ -3,16 +3,6 @@
 <head>
     <title>教师登录</title>
     <style>
-        h1
-        {
-            background: deepskyblue;
-        }
-
-        body {
-            background-image: url("../../image/background.jpg");
-            background-size: 100% 100%;
-        }
-
         .wrapper {
             margin: 12% 0 0 40%;
             width: 884px;
@@ -82,12 +72,13 @@
             background-image: -moz-linear-gradient(to top, blue, #85CFEE);
         }
 
-        .loginBox input {
-            vertical-align: middle;
-        }
-
         .loginBox label[for="remember"] {
             font: 11px Arial;
+        }
+
+        body {
+            background-image: url("../../image/background.jpg");
+            background-size: 100% 100%;
         }
         .foot {
             left: 37.5%;

@@ -15,7 +15,7 @@
         }
 
         .wrapper {
-            margin: 5% 0 0 40%;
+            margin: 3% 0 0 40%;
             width: 1120px;
         }
 
@@ -108,7 +108,7 @@
     </style>
 </head>
 <body>
-<br><br>
+<br><br><br><br><br>
 <div align="center">
     <h1>请插入教师信息</h1>
 </div>

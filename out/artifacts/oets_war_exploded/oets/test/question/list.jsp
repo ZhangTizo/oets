@@ -18,12 +18,12 @@
 <form action="SearchQuestionServlet" method="post">
     <br>
     <input type="button" onclick="location.href='ReturnQuestionServlet'" value="返回上一页">
-    <input type="button" onclick="location.href='QuestionListServlet?method=insert'" value="新增题目">
+    <input type="button" onclick="location.href='QuestionListServlet?method=insert'" value="新增题目"><br>
     <div align="center">
         <h1>题库管理</h1>
-    </div><br>
+    </div>
     <div align="center"><br>
-        查询:<input size="16" type="text" name="search" placeholder="请输入要查询题目名称">&nbsp;&nbsp;
+        查询:<input size="16" type="text" name="search" placeholder="请输入要查询题目名称" style="width: 200px">&nbsp;&nbsp;
         <input type="submit" value="查询"><br><br>
     </div>
     <table cellspacing="0" style="border:0;min-height: 400px;margin:0 auto;">

@@ -7,13 +7,13 @@
     <title>Title</title>
     <style>
         body {
-            background-image: url("../../image/background.jpg");
+            background-image: url("../../image/background1.jpg");
             background-size: 100% 100%;
         }
     </style>
 </head>
 <body>
-<a href="success.jsp">返回</a>
+<a href="success.jsp">返回</a><br><br><br>
 <table align="center" border="1" cellpadding="15">
     <tr>
         <th>试卷名称</th>

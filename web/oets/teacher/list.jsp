@@ -45,12 +45,12 @@
 <form action="SearchTeacherServlet" method="post">
     <br>
     <input type="button" onclick="location.href='../manager/manage.jsp'" value="返回上一页">
-    <input type="button" onclick="location.href='TeacherListServlet?method=insert'" value="插入教师信息">
+    <input type="button" onclick="location.href='TeacherListServlet?method=insert'" value="插入教师信息"><br><br><br>
     <div align="center">
         <h1>教师管理</h1>
-    </div><br>
+    </div>
     <div align="center"><br>
-        教师工号:<input size="16" type="text" name="search" placeholder="请输入要查询的教师工号或姓名">&nbsp;&nbsp;
+        教师工号:<input size="16" type="text" name="search" placeholder="请输入要查询的教师工号或姓名" style="width: 200px">&nbsp;&nbsp;
         <input type="submit" value="查询"><br><br>
     </div>
     <table align="center" border="1" cellpadding="15" class="gridtable">
@@ -77,7 +77,7 @@
             </tr>
         </c:forEach>
     </table>
-    <div align="center"><br>
+    <div align="center"><br><br><br><br>
         <input type="button" value="上一页" onclick="location.href='TeacherListServlet?method=up&post=${currentPages}'">&nbsp;&nbsp;
         当前第&nbsp;<u>${currentPages}</u>&nbsp;页&nbsp;
         &nbsp;<input type="button" value="下一页" onclick="location.href='TeacherListServlet?method=down&post=${currentPages}'">

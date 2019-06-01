@@ -8,6 +8,11 @@
 <head>
     <title>请选择考试</title>
     <style>
+        h1
+        {
+            background: deepskyblue;
+        }
+
         body {
             background-image: url("../../image/background.jpg");
             background-size: 100% 100%;
@@ -16,7 +21,7 @@
 </head>
 <body>
 <form method="post" action="TestServlet">
-    <a href="success.jsp">返回</a>
+    <a href="success.jsp">返回</a><br><br><br><br>
     <div align="center">
         <h1>参加考试</h1>
         <br><br><br>

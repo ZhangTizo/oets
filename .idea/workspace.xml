@@ -11,8 +11,47 @@
   <component name="ChangeListManager">
     <list default="true" id="10ab2a56-7266-4131-bda6-61c3f235a272" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/insert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/insert.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/password.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/score.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/score.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/student/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/insert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/insert.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/password.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/teacher/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/question/insert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/question/insert.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/question/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/question/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/question/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/question/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/testpaper/insert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/testpaper/insert.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/testpaper/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/testpaper/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/testpaper/preview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/testpaper/preview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/testpaper/score.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/testpaper/score.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/testpaper/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/oets_war_exploded/oets/test/testpaper/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/student/insert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/student/insert.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/student/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/student/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/student/password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/student/password.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/student/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/student/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/student/score.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/student/score.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/student/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/student/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/student/test.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/student/test.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/student/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/student/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/teacher/insert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/teacher/insert.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/teacher/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/teacher/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/teacher/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/teacher/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/teacher/password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/teacher/password.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/teacher/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/teacher/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/test/question/insert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/test/question/insert.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/test/question/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/test/question/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/test/question/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/test/question/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/test/testpaper/insert.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/test/testpaper/insert.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/test/testpaper/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/test/testpaper/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/oets/test/testpaper/preview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/test/testpaper/preview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/test/testpaper/score.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/test/testpaper/score.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/oets/test/testpaper/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/oets/test/testpaper/update.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,56 +80,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestEndServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/TestEndServlet.java">
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/oets/student/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="preview.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/preview.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/test.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1178">
-              <caret line="62" column="84" lean-forward="true" selection-start-line="62" selection-start-column="84" selection-end-line="62" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="70" column="93" lean-forward="true" selection-start-line="70" selection-start-column="93" selection-end-line="70" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestPaperPreviewServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/TestPaperPreviewServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="30" column="74" lean-forward="true" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/TestServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="49" selection-end-column="78" />
+            <state relative-caret-position="1824">
+              <caret line="96" column="53" lean-forward="true" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -125,57 +119,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/oets/teacher/insert.jsp" />
-        <option value="$PROJECT_DIR$/web/oets/teacher/manage.jsp" />
-        <option value="$PROJECT_DIR$/web/oets/student/success.jsp" />
-        <option value="$PROJECT_DIR$/web/oets/manager/manage.jsp" />
-        <option value="$PROJECT_DIR$/web/oets/student/login.jsp" />
-        <option value="$PROJECT_DIR$/web/oets/student/test.jsp" />
-        <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/ReturnScoreServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/ReturnQuestionServlet.java" />
-        <option value="$PROJECT_DIR$/web/oets/teacher/list.jsp" />
-        <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/SearchTeacherServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/SearchQuestionServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/ahstu/oets/entity/Question.java" />
-        <option value="$PROJECT_DIR$/web/oets/student/list.jsp" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/InsertQuestionServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/UpdateQuestionServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/entity/ScoreQuery.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/dao/ScoreDao.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/ScoreServlet.java" />
-        <option value="$PROJECT_DIR$/web/oets/test/testpaper/score.jsp" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/util/DbUtil.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/entity/ScoreQueryStudent.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/dao/impl/ScoreDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/StudentScoreServlet.java" />
-        <option value="$PROJECT_DIR$/web/oets/student/score.jsp" />
         <option value="$PROJECT_DIR$/web/oets/test/question/insertreading.jsp" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/SearchTestPaperServlet.java" />
-        <option value="$PROJECT_DIR$/web/oets/test/testpaper/list.jsp" />
         <option value="$PROJECT_DIR$/web/oets/test/question/reading.jsp" />
-        <option value="$PROJECT_DIR$/web/oets/test/question/insert.jsp" />
         <option value="$PROJECT_DIR$/web/oets/test/question/irquestion.jsp" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/InsertReadingServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/InsertReadingQuestionServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/SearchStudentServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/QuestionListServlet.java" />
-        <option value="$PROJECT_DIR$/web/oets/test/question/update.jsp" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/entity/RQuestion.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/entity/Reading.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/entity/TReading.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/dao/QuestionDao.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/dao/impl/QuestionDaoImpl.java" />
-        <option value="$PROJECT_DIR$/web/oets/test/testpaper/update.jsp" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/UpdateTestPaperServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/dao/TestPaperDao.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/TestServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/dao/impl/TestPaperDaoImpl.java" />
         <option value="$PROJECT_DIR$/web/oets/test/testpaper/test.jsp" />
-        <option value="$PROJECT_DIR$/web/oets/test/question/list.jsp" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/TestEndServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/TestPaperListServlet.java" />
         <option value="$PROJECT_DIR$/src/com/ahstu/oets/servlet/TestPaperPreviewServlet.java" />
         <option value="$PROJECT_DIR$/web/oets/test/testpaper/preview.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/student/update.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/student/insert.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/student/list.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/teacher/insert.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/teacher/update.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/teacher/list.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/test/question/list.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/test/question/insert.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/test/testpaper/list.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/test/testpaper/insert.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/test/testpaper/score.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/student/test.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/student/score.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/student/register.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/teacher/login.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/test/question/update.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/test/testpaper/update.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/teacher/password.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/student/password.jsp" />
+        <option value="$PROJECT_DIR$/web/oets/student/success.jsp" />
       </list>
     </option>
   </component>
@@ -211,8 +205,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -253,35 +247,16 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="ahstu" type="462c0819:PsiDirectoryNode" />
               <item name="oets" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oets" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oets" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ahstu" type="462c0819:PsiDirectoryNode" />
-              <item name="oets" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oets" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oets" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ahstu" type="462c0819:PsiDirectoryNode" />
-              <item name="oets" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oets" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oets" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ahstu" type="462c0819:PsiDirectoryNode" />
-              <item name="oets" type="462c0819:PsiDirectoryNode" />
               <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oets" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ahstu" type="462c0819:PsiDirectoryNode" />
+              <item name="oets" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oets" type="b2602c69:ProjectViewProjectNode" />
@@ -300,6 +275,13 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="oets" type="462c0819:PsiDirectoryNode" />
               <item name="student" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oets" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oets" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="oets" type="462c0819:PsiDirectoryNode" />
+              <item name="teacher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oets" type="b2602c69:ProjectViewProjectNode" />
@@ -332,7 +314,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -603,7 +585,9 @@
       <workItem from="1559263184442" duration="7254000" />
       <workItem from="1559273696493" duration="169000" />
       <workItem from="1559273902650" duration="777000" />
-      <workItem from="1559279668597" duration="31208000" />
+      <workItem from="1559279668597" duration="31249000" />
+      <workItem from="1559346995021" duration="542000" />
+      <workItem from="1559347588869" duration="5497000" />
     </task>
     <task id="LOCAL-00001" summary="Correct BUGs">
       <created>1554967638419</created>
@@ -731,11 +715,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559320512966</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Generally Complete.">
+      <created>1559321008244</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1559321008245</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="346305000" />
+    <option name="totallyTimeSpent" value="352385000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -747,7 +738,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5010661" side_tool="true" weight="0.26213592" />
@@ -768,11 +760,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.3297414" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32842106" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.3025974" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.30210528" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3297414" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1984375" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32467532" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -782,6 +773,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Maven" order="9" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32467532" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -814,109 +806,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/entity/ScoreQueryStudent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/dao/impl/ScoreDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/student/score.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/StudentScoreServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/entity/ScoreQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/score.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-226" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/manager/manage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/student/update.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2242">
-          <caret line="118" column="29" selection-start-line="118" selection-start-column="29" selection-end-line="118" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/oets_war_exploded/image/background.jpg" />
-    <entry file="file://$PROJECT_DIR$/oets.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/image/background.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/student/login.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/dao/impl/StudentDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1756">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/dao/impl/TeacherDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1349">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/SearchTestPaperServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="79" column="71" lean-forward="true" selection-start-line="79" selection-start-column="71" selection-end-line="79" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/ScoreServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/entity/Question.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/InsertQuestionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -969,20 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/insert.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/test/question/insert.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="119" column="40" lean-forward="true" selection-start-line="119" selection-start-column="40" selection-end-line="119" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/oets/test/question/irquestion.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -994,9 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
           <caret line="23" column="90" lean-forward="true" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1004,9 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="604">
           <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1014,13 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/test/question/update.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="159" column="28" lean-forward="true" selection-start-line="159" selection-start-column="28" selection-end-line="159" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1042,15 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1058,37 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#123#124#0" expanded="true" />
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/UpdateTestPaperServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/student/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="52" column="52" lean-forward="true" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/update.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="105" column="14" lean-forward="true" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1106,16 +932,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/dao/impl/QuestionDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="136" column="31" selection-start-line="136" selection-start-column="31" selection-end-line="136" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/dao/impl/TestPaperDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1123,59 +939,242 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/test/question/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/TestEndServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="513">
           <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/TestPaperListServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="56" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/TestServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="49" selection-end-column="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/TestPaperPreviewServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="30" column="74" lean-forward="true" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="70" column="93" lean-forward="true" selection-start-line="70" selection-start-column="93" selection-end-line="70" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/preview.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
+        <state relative-caret-position="570">
+          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/test.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1178">
-          <caret line="62" column="84" lean-forward="true" selection-start-line="62" selection-start-column="84" selection-end-line="62" selection-end-column="84" />
+          <caret line="62" column="84" selection-start-line="62" selection-start-column="84" selection-end-line="62" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/student/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/preview.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/student/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="53" column="101" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="101" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/teacher/insert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-570">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/teacher/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/test/question/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="102" selection-start-line="20" selection-start-column="102" selection-end-line="20" selection-end-column="102" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/teacher/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/test/question/insert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/insert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/score.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/student/insert.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/student/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/student/score.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/student/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/teacher/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/TestServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/test/question/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="101" column="4" lean-forward="true" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/test/testpaper/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/teacher/password.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/student/password.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/teacher/manage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="111" column="106" selection-start-line="111" selection-start-column="106" selection-end-line="111" selection-end-column="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/student/success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="111" column="109" selection-start-line="111" selection-start-column="109" selection-end-line="111" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/util/DbUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/InsertQuestionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/UpdateTestPaperServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/dao/impl/QuestionDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ahstu/oets/servlet/TestPaperListServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="55" column="75" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/oets/student/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1824">
+          <caret line="96" column="53" lean-forward="true" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
         </state>
       </provider>
     </entry>

@@ -14,7 +14,7 @@
         }
 
         .wrapper {
-            margin: 5% 0 0 40%;
+            margin: 8% 0 0 40%;
             width: 884px;
         }
 

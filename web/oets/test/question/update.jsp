@@ -11,12 +11,12 @@
         }
 
         body {
-            background-image: url("../../../image/background.jpg");
+            background-image: url("../../../image/background1.jpg");
             background-size: 100% 100%;
         }
 
         .wrapper {
-            margin: 50px 0 140px 760px;
+            margin: 2% 0 0 40%;
             width: 1120px;
         }
 
@@ -99,7 +99,7 @@
     </style>
 </head>
 <body>
-<br><br>
+<br>
 <div align="center">
     <h1>请修改题目信息</h1>
 </div>

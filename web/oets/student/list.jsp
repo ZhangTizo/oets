@@ -39,7 +39,6 @@
             border-color:#666666;
             background-color:#ffffff;
         }
-
     </style>
 </head>
 <body>
@@ -47,11 +46,12 @@
     <br>
     <input type="button" onclick="location.href='ReturnStudentServlet'" value="返回上一页">
     <input type="button" onclick="location.href='StudentListServlet?method=insert'" value="插入学生信息">
+    <br><br><br>
     <div align="center">
         <h1>学生管理</h1>
-    </div><br>
+    </div>
     <div align="center"><br>
-        学号:<input size="16" type="text" name="search" placeholder="请输入要查询的学号或姓名">&nbsp;&nbsp;
+        学号:<input size="16" type="text" name="search" placeholder="请输入要查询的学号或姓名" style="width: 200px">&nbsp;&nbsp;
         <input type="submit" value="查询"><br><br>
     </div>
     <table align="center" border="1" cellpadding="15" class="gridtable">
@@ -78,7 +78,7 @@
             </tr>
         </c:forEach>
     </table>
-    <div align="center"><br>
+    <div align="center"><br><br><br><br>
         <input type="button" value="上一页" onclick="location.href='StudentListServlet?method=up&post=${currentPages}'">&nbsp;&nbsp;
         当前第&nbsp;<u>${currentPages}</u>&nbsp;页&nbsp;
         &nbsp;<input type="button" value="下一页" onclick="location.href='StudentListServlet?method=down&post=${currentPages}'">

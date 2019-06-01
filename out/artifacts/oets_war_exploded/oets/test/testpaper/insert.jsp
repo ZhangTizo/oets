@@ -15,13 +15,13 @@
         }
 
         .wrapper {
-            margin: 50px 0 140px 760px;
+            margin: 3% 0 0 43%;
             width: 1120px;
         }
     </style>
 </head>
 <body>
-<br><br>
+<br><br><br><br><br>
 <div align="center">
     <h1>新增试卷</h1>
 </div>
@@ -35,8 +35,8 @@
         <br>
         结束时间:<input name="end" class="Wdate" type="text" placeholder="请选择结束时间"
                     onclick="WdatePicker({lang:'zh-cn',dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:'#F{$dp.$D(\'start\')}||%y-%M-%d %H:%m:%s'})">
-        <br>
-        <input type="submit" value="保&nbsp;&nbsp;存" class="loginBtn">
+        <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="保&nbsp;&nbsp;存" class="loginBtn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="TestPaperListServlet" style="color: blue;font-weight: bold;font-size: 15px;">返&nbsp;&nbsp;回</a>
     </form>
 </div>

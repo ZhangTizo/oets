@@ -14,7 +14,7 @@
         }
 
         .wrapper {
-            margin: 50px 0 140px 760px;
+            margin: 2% 0 0 40%;
             width: 1120px;
         }
 
@@ -107,7 +107,7 @@
     </style>
 </head>
 <body>
-<br><br>
+<br><br><br><br><br>
 <div align="center">
     <h1>新增题目</h1>
 </div>

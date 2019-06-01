@@ -24,7 +24,7 @@
         }
         table.gridtable th{
             text-align:center;
-            width: 150px;
+            /*width: 150px;*/
             border-width:1px;
             padding:8px;
             border-style:solid;
@@ -47,21 +47,21 @@
 <form action="SearchTestPaperServlet" method="post">
     <br>
     <input type="button" onclick="location.href='ReturnTestPaperServlet'" value="返回上一页">
-    <input type="button" onclick="location.href='TestPaperListServlet?method=insert'" value="新增试卷">
+    <input type="button" onclick="location.href='TestPaperListServlet?method=insert'" value="新增试卷"><br><br><br>
     <div align="center">
         <h1>试卷管理</h1>
-    </div><br>
+    </div>
     <div align="center"><br>
-        查询:<input size="16" type="text" name="search" placeholder="请输入要查询题目名称">&nbsp;&nbsp;
+        查询:<input size="16" type="text" name="search" placeholder="请输入要查询题目名称" style="width: 200px">&nbsp;&nbsp;
         <input type="submit" value="查询"><br><br>
     </div>
     <table align="center" border="1" cellpadding="15" class="gridtable">
         <tr>
-            <th>试卷名称</th>
-            <th>开始时间</th>
-            <th>结束时间</th>
-            <th>预览</th>
-            <th>操作</th>
+            <th width="300px">试卷名称</th>
+            <th width="300px">开始时间</th>
+            <th width="300px">结束时间</th>
+            <th width="50px">预览</th>
+            <th width="50px">操作</th>
         </tr>
         <c:forEach var="testPaper" items="${testPaperList}">
             <tr>
@@ -73,7 +73,7 @@
             </tr>
         </c:forEach>
     </table>
-    <div align="center"><br>
+    <div align="center"><br><br><br><br>
         <input type="button" value="上一页" onclick="location.href='TestPaperListServlet?method=up&post=${currentPages}'">&nbsp;&nbsp;
         当前第&nbsp;<u>${currentPages}</u>&nbsp;页&nbsp;
         &nbsp;<input type="button" value="下一页" onclick="location.href='TestPaperListServlet?method=down&post=${currentPages}'">

@@ -109,7 +109,7 @@
 </div>
     <br><br>
 <div align="center">
-    <input type="button" onclick="location.href='test.jsp'" value="准备考试" class="but">
+    <input type="button" onclick="location.href='test.jsp'" value="准备考试" class="but">&nbsp;&nbsp;&nbsp;&nbsp;
     <input type="button" onclick="location.href='StudentScoreServlet'" value="成绩查询" class="but">
 </div>
 </body>
